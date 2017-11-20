@@ -1,0 +1,4 @@
+1.    core 核心框架类，运行框架，必不可少
+      database  数据库驱动目录，存储数据驱动类，如mysql类
+      helpers   辅助函数目录
+      libraries 库目录，存储工具类，如upload类，image类         

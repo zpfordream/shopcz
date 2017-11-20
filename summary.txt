@@ -1,0 +1,18 @@
+1.    application 为应用程序目录
+      framework   为框架目录
+      public      前台静态资源目录
+      index.php   入口文件          
+
+2.    类名，用大驼峰式，如GoodsController ，首字母大写，对应的文件名 GoodsController.class.php
+      方法名，使用小驼峰式，addAction，首字母小写
+      属性名，也用小驼峰式，有时候会对private约束的属性前面加一个下划线_(推荐)
+      函数名，严格区分大小写。
+
+3.   定义核心启动类，让项目run起来
+
+4. 项目安全，有三个问题：
+    一是：恶意攻击，暴力破解。       解决方法： 加验证码
+    二是：sql注入,在表单中填入特殊的字符 或者 是 url中增加特殊的字符，然后想数据库发起请求，拼凑出sql语句，达到攻击的目的。
+          两种形式： post表单提交 和 get，url传参
+          万能密码： Password = ‘ xxx' or ‘1 ‘ ，解决方式，
+    三是：xss供给
