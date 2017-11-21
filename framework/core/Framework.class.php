@@ -34,6 +34,7 @@ class Framework{
         define("DB_PATH", FRAMEWORK_PATH.'database'.DS );
         define("HELPER_PATH", FRAMEWORK_PATH.'helpers'.DS );
         define("LIB_PATH", FRAMEWORK_PATH.'libraries'.DS );
+        define("UPLOAD_PATH", PUBLIC_PATH.'uploads'.DS );
 
         //前后台的控制器和视图目录的定义，解析url参数，可以确定到具体路径
         define("PLATFORM",isset($_REQUEST['p']) ? $_REQUEST['p']:"home");

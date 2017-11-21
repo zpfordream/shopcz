@@ -26,7 +26,7 @@ class  AttributeModel extends Model{
     }
 
 
-    //获取分页的属性列表
+    //获取指定类型下的属性，并构成表单，即用php在html页面的输出属性列表
     public function getAttrsForm( $type_id   ){
         $sql = "SELECT * from {$this->table} WHERE  type_id = $type_id";
         $attrs =  $this->db->getAll($sql);
