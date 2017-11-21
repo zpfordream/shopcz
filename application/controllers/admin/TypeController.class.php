@@ -52,7 +52,7 @@ class TypeController extends Controller{
         $offset = ($current - 1) * $pagesize;
         //获取每一页的列表
         $types = $typeModel->getPageTypes($offset,$pagesize);
-        var_dump($types);
+//        var_dump($types);
 
         //使用分页类来获取分页信息
         $where = "";

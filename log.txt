@@ -1130,3 +1130,310 @@
 [2017-11-21 11:53:20]set names utf8
 [2017-11-21 11:53:20]DESC cz_goods_type
 [2017-11-21 11:53:20]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:13:54]set names utf8
+[2017-11-21 15:13:54]DESC cz_admin
+[2017-11-21 15:15:36]set names utf8
+[2017-11-21 15:15:36]DESC cz_admin
+[2017-11-21 15:17:07]set names utf8
+[2017-11-21 15:17:07]DESC cz_user
+[2017-11-21 15:17:07]select * from cz_user where admin_name= 'user' and password = 'pass' limit 1
+[2017-11-21 15:19:59]set names utf8
+[2017-11-21 15:19:59]DESC cz_admin
+[2017-11-21 15:19:59]select * from cz_admin where admin_name= 'user' and password = 'pass' limit 1
+[2017-11-21 15:20:04]set names utf8
+[2017-11-21 15:20:04]DESC cz_category
+[2017-11-21 15:20:04]select * from cz_category
+[2017-11-21 15:20:04]set names utf8
+[2017-11-21 15:20:04]DESC cz_goods_type
+[2017-11-21 15:20:04]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:20:45]set names utf8
+[2017-11-21 15:20:45]DESC cz_category
+[2017-11-21 15:20:45]select * from cz_category
+[2017-11-21 15:20:49]set names utf8
+[2017-11-21 15:20:49]DESC cz_category
+[2017-11-21 15:20:49]select * from cz_category
+[2017-11-21 15:21:04]set names utf8
+[2017-11-21 15:21:04]DESC cz_category
+[2017-11-21 15:21:04]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('书','0','1','50','1','书')
+[2017-11-21 15:21:07]set names utf8
+[2017-11-21 15:21:07]DESC cz_category
+[2017-11-21 15:21:07]select * from cz_category
+[2017-11-21 15:21:07]set names utf8
+[2017-11-21 15:21:07]DESC cz_category
+[2017-11-21 15:21:07]select * from cz_category
+[2017-11-21 15:21:12]set names utf8
+[2017-11-21 15:21:12]DESC cz_category
+[2017-11-21 15:21:12]select * from cz_category
+[2017-11-21 15:21:39]set names utf8
+[2017-11-21 15:21:39]DESC cz_category
+[2017-11-21 15:21:39]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('衣服','0','','50','1','衣服包含很多')
+[2017-11-21 15:21:42]set names utf8
+[2017-11-21 15:21:42]DESC cz_category
+[2017-11-21 15:21:42]select * from cz_category
+[2017-11-21 15:21:52]set names utf8
+[2017-11-21 15:21:52]DESC cz_category
+[2017-11-21 15:21:52]select * from cz_category
+[2017-11-21 15:21:59]set names utf8
+[2017-11-21 15:21:59]DESC cz_category
+[2017-11-21 15:21:59]select * from cz_category
+[2017-11-21 15:22:02]set names utf8
+[2017-11-21 15:22:02]DESC cz_category
+[2017-11-21 15:22:02]select * from cz_category
+[2017-11-21 15:22:30]set names utf8
+[2017-11-21 15:22:30]DESC cz_category
+[2017-11-21 15:22:30]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('鞋','0','1','50','1','鞋包括很多男鞋，女鞋')
+[2017-11-21 15:22:33]set names utf8
+[2017-11-21 15:22:33]DESC cz_category
+[2017-11-21 15:22:33]select * from cz_category
+[2017-11-21 15:22:39]set names utf8
+[2017-11-21 15:22:39]DESC cz_category
+[2017-11-21 15:22:39]select * from cz_category
+[2017-11-21 15:22:58]set names utf8
+[2017-11-21 15:22:58]DESC cz_category
+[2017-11-21 15:22:58]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('男人衣服','2','1','50','1','')
+[2017-11-21 15:23:01]set names utf8
+[2017-11-21 15:23:01]DESC cz_category
+[2017-11-21 15:23:01]select * from cz_category
+[2017-11-21 15:23:05]set names utf8
+[2017-11-21 15:23:05]DESC cz_category
+[2017-11-21 15:23:05]select * from cz_category
+[2017-11-21 15:23:14]set names utf8
+[2017-11-21 15:23:14]DESC cz_category
+[2017-11-21 15:23:14]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('女人衣服','2','','50','1','')
+[2017-11-21 15:23:17]set names utf8
+[2017-11-21 15:23:17]DESC cz_category
+[2017-11-21 15:23:17]select * from cz_category
+[2017-11-21 15:23:44]set names utf8
+[2017-11-21 15:23:44]DESC cz_category
+[2017-11-21 15:23:44]select * from cz_category
+[2017-11-21 15:23:47]set names utf8
+[2017-11-21 15:23:47]DESC cz_category
+[2017-11-21 15:23:47]select * from cz_category
+[2017-11-21 15:24:11]set names utf8
+[2017-11-21 15:24:11]DESC cz_category
+[2017-11-21 15:24:11]select * from cz_category
+[2017-11-21 15:24:15]set names utf8
+[2017-11-21 15:24:15]DESC cz_category
+[2017-11-21 15:24:15]select * from cz_category
+[2017-11-21 15:24:27]set names utf8
+[2017-11-21 15:24:27]DESC cz_category
+[2017-11-21 15:24:27]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('衬衫','4','','50','1','')
+[2017-11-21 15:24:30]set names utf8
+[2017-11-21 15:24:30]DESC cz_category
+[2017-11-21 15:24:30]select * from cz_category
+[2017-11-21 15:24:35]set names utf8
+[2017-11-21 15:24:35]DESC cz_category
+[2017-11-21 15:24:35]select * from cz_category
+[2017-11-21 15:24:45]set names utf8
+[2017-11-21 15:24:45]DESC cz_category
+[2017-11-21 15:24:45]INSERT INTO `cz_category` (`cat_name`,`parent_id`,`unit`,`sort_order`,`is_show`,`cat_desc`) VALUES ('牛仔裤','4','','50','1','')
+[2017-11-21 15:24:48]set names utf8
+[2017-11-21 15:24:48]DESC cz_category
+[2017-11-21 15:24:48]select * from cz_category
+[2017-11-21 15:24:49]set names utf8
+[2017-11-21 15:24:49]DESC cz_goods_type
+[2017-11-21 15:24:49]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-21 15:24:49]select count(*) from cz_goods_type
+[2017-11-21 15:25:26]set names utf8
+[2017-11-21 15:25:26]DESC cz_goods_type
+[2017-11-21 15:25:26]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-21 15:25:26]select count(*) from cz_goods_type
+[2017-11-21 15:25:37]set names utf8
+[2017-11-21 15:25:37]DESC cz_goods_type
+[2017-11-21 15:25:37]INSERT INTO `cz_goods_type` (`type_name`) VALUES ('电影')
+[2017-11-21 15:25:45]set names utf8
+[2017-11-21 15:25:45]DESC cz_goods_type
+[2017-11-21 15:25:45]INSERT INTO `cz_goods_type` (`type_name`) VALUES ('类型1')
+[2017-11-21 15:26:01]set names utf8
+[2017-11-21 15:26:01]DESC cz_goods_type
+[2017-11-21 15:26:01]INSERT INTO `cz_goods_type` (`type_name`) VALUES ('手机')
+[2017-11-21 15:26:21]set names utf8
+[2017-11-21 15:26:21]DESC cz_goods_type
+[2017-11-21 15:26:21]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-21 15:26:21]select count(*) from cz_goods_type
+[2017-11-21 15:26:26]set names utf8
+[2017-11-21 15:26:26]DESC cz_goods_type
+[2017-11-21 15:26:26]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-21 15:26:26]select count(*) from cz_goods_type
+[2017-11-21 15:26:34]set names utf8
+[2017-11-21 15:26:34]DESC cz_goods_type
+[2017-11-21 15:26:34]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:26:34]set names utf8
+[2017-11-21 15:26:34]DESC cz_attribute
+[2017-11-21 15:26:34]select count(*) from cz_attribute where type_id = 1
+[2017-11-21 15:26:34]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-21 15:26:34]set names utf8
+[2017-11-21 15:26:34]DESC cz_goods_type
+[2017-11-21 15:26:34]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:26:47]set names utf8
+[2017-11-21 15:26:47]DESC cz_goods_type
+[2017-11-21 15:26:47]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:27:08]set names utf8
+[2017-11-21 15:27:08]DESC cz_attribute
+[2017-11-21 15:27:08]INSERT INTO `cz_attribute` (`attr_name`,`type_id`,`attr_type`,`attr_input_type`,`attr_value`) VALUES ('作者','1','0','0','')
+[2017-11-21 15:27:11]set names utf8
+[2017-11-21 15:27:11]DESC cz_goods_type
+[2017-11-21 15:27:11]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:27:11]set names utf8
+[2017-11-21 15:27:11]DESC cz_attribute
+[2017-11-21 15:27:11]select count(*) from cz_attribute where type_id = 1
+[2017-11-21 15:27:11]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-21 15:27:11]set names utf8
+[2017-11-21 15:27:11]DESC cz_goods_type
+[2017-11-21 15:27:11]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:27:29]set names utf8
+[2017-11-21 15:27:29]DESC cz_category
+[2017-11-21 15:27:29]select * from cz_category
+[2017-11-21 15:27:29]set names utf8
+[2017-11-21 15:27:29]DESC cz_goods_type
+[2017-11-21 15:27:29]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:27:32]set names utf8
+[2017-11-21 15:27:32]DESC cz_goods_type
+[2017-11-21 15:27:32]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-21 15:27:32]select count(*) from cz_goods_type
+[2017-11-21 15:27:41]set names utf8
+[2017-11-21 15:27:41]DESC cz_goods_type
+[2017-11-21 15:27:41]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:27:41]set names utf8
+[2017-11-21 15:27:41]DESC cz_attribute
+[2017-11-21 15:27:41]select count(*) from cz_attribute where type_id = 1
+[2017-11-21 15:27:41]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-21 15:27:41]set names utf8
+[2017-11-21 15:27:41]DESC cz_goods_type
+[2017-11-21 15:27:41]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:28:20]set names utf8
+[2017-11-21 15:28:20]DESC cz_goods_type
+[2017-11-21 15:28:20]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:29:58]set names utf8
+[2017-11-21 15:29:58]DESC cz_attribute
+[2017-11-21 15:29:58]INSERT INTO `cz_attribute` (`attr_name`,`type_id`,`attr_type`,`attr_input_type`,`attr_value`) VALUES ('观看人数','1','1','1','1人
+2人
+3人')
+[2017-11-21 15:30:01]set names utf8
+[2017-11-21 15:30:01]DESC cz_goods_type
+[2017-11-21 15:30:01]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:30:01]set names utf8
+[2017-11-21 15:30:01]DESC cz_attribute
+[2017-11-21 15:30:01]select count(*) from cz_attribute where type_id = 1
+[2017-11-21 15:30:01]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-21 15:30:01]set names utf8
+[2017-11-21 15:30:01]DESC cz_goods_type
+[2017-11-21 15:30:01]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:30:41]set names utf8
+[2017-11-21 15:30:41]DESC cz_goods_type
+[2017-11-21 15:30:41]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:31:01]set names utf8
+[2017-11-21 15:31:01]DESC cz_attribute
+[2017-11-21 15:31:01]INSERT INTO `cz_attribute` (`attr_name`,`type_id`,`attr_type`,`attr_input_type`,`attr_value`) VALUES ('观后感','1','0','2','')
+[2017-11-21 15:31:04]set names utf8
+[2017-11-21 15:31:04]DESC cz_goods_type
+[2017-11-21 15:31:04]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:31:04]set names utf8
+[2017-11-21 15:31:04]DESC cz_attribute
+[2017-11-21 15:31:04]select count(*) from cz_attribute where type_id = 1
+[2017-11-21 15:31:04]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-21 15:31:04]set names utf8
+[2017-11-21 15:31:04]DESC cz_goods_type
+[2017-11-21 15:31:04]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:31:12]set names utf8
+[2017-11-21 15:31:12]DESC cz_category
+[2017-11-21 15:31:12]select * from cz_category
+[2017-11-21 15:31:12]set names utf8
+[2017-11-21 15:31:12]DESC cz_goods_type
+[2017-11-21 15:31:12]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:32:12]set names utf8
+[2017-11-21 15:32:12]DESC cz_attribute
+[2017-11-21 15:32:12]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:32:28]set names utf8
+[2017-11-21 15:32:28]DESC cz_category
+[2017-11-21 15:32:28]select * from cz_category
+[2017-11-21 15:32:28]set names utf8
+[2017-11-21 15:32:28]DESC cz_goods_type
+[2017-11-21 15:32:28]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:33:23]set names utf8
+[2017-11-21 15:33:23]DESC cz_category
+[2017-11-21 15:33:23]select * from cz_category
+[2017-11-21 15:33:23]set names utf8
+[2017-11-21 15:33:23]DESC cz_goods_type
+[2017-11-21 15:33:23]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:33:51]set names utf8
+[2017-11-21 15:33:51]DESC cz_attribute
+[2017-11-21 15:33:51]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:34:01]set names utf8
+[2017-11-21 15:34:01]DESC cz_goods
+[2017-11-21 15:34:01]INSERT INTO `cz_goods` (`goods_name`,`goods_sn`,`brand_id`,`type_id`,`market_price`,`promote_start_time`,`promote_end_time`,`goods_desc`,`add_time`,`is_best`,`is_new`,`is_hot`,`is_onsale`,`goods_img`) VALUES ('a1','a1','a1','a1','3612.00','1243814400','1417305600','','1511278441','1','1','1','1','20171121/201711211534015a1447696ee3d.jpg')
+[2017-11-21 15:40:02]set names utf8
+[2017-11-21 15:40:02]DESC cz_category
+[2017-11-21 15:40:02]select * from cz_category
+[2017-11-21 15:40:02]set names utf8
+[2017-11-21 15:40:02]DESC cz_goods_type
+[2017-11-21 15:40:02]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:40:02]set names utf8
+[2017-11-21 15:40:02]DESC cz_attribute
+[2017-11-21 15:40:02]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:40:30]set names utf8
+[2017-11-21 15:40:30]DESC cz_attribute
+[2017-11-21 15:40:30]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:40:40]set names utf8
+[2017-11-21 15:40:40]DESC cz_goods
+[2017-11-21 15:40:40]INSERT INTO `cz_goods` (`goods_name`,`goods_sn`,`cat_id`,`brand_id`,`shop_price`,`market_price`,`promote_start_time`,`promote_end_time`,`goods_desc`,`add_time`,`is_best`,`is_new`,`is_hot`,`is_onsale`,`goods_img`) VALUES ('a1','a1','6','1','3010.00','3612.00','1243814400','1417305600','','1511278840','1','1','1','1','20171121/201711211540405a1448f8968a0.jpg')
+[2017-11-21 15:40:40]set names utf8
+[2017-11-21 15:40:40]DESC cz_goods_attr
+[2017-11-21 15:40:40]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('1','1','a1','0')
+[2017-11-21 15:40:40]set names utf8
+[2017-11-21 15:40:40]DESC cz_goods_attr
+[2017-11-21 15:40:40]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('1','2','1人','0')
+[2017-11-21 15:40:40]set names utf8
+[2017-11-21 15:40:40]DESC cz_goods_attr
+[2017-11-21 15:40:40]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('1','3','aaaaaaaaa','')
+[2017-11-21 15:41:21]set names utf8
+[2017-11-21 15:41:21]DESC cz_category
+[2017-11-21 15:41:21]select * from cz_category
+[2017-11-21 15:41:21]set names utf8
+[2017-11-21 15:41:21]DESC cz_goods_type
+[2017-11-21 15:41:21]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:41:21]set names utf8
+[2017-11-21 15:41:21]DESC cz_attribute
+[2017-11-21 15:41:21]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:41:24]set names utf8
+[2017-11-21 15:41:24]DESC cz_category
+[2017-11-21 15:41:24]select * from cz_category
+[2017-11-21 15:41:24]set names utf8
+[2017-11-21 15:41:24]DESC cz_goods_type
+[2017-11-21 15:41:24]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:41:42]set names utf8
+[2017-11-21 15:41:42]DESC cz_attribute
+[2017-11-21 15:41:42]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:41:50]set names utf8
+[2017-11-21 15:41:50]DESC cz_goods
+[2017-11-21 15:41:50]INSERT INTO `cz_goods` (`goods_name`,`goods_sn`,`cat_id`,`brand_id`,`shop_price`,`market_price`,`promote_start_time`,`promote_end_time`,`goods_desc`,`add_time`,`is_best`,`is_new`,`is_hot`,`is_onsale`,`goods_img`) VALUES ('a1','a1','4','1','3010.00','3612.00','1243814400','1417305600','','1511278909','1','1','1','1','20171121/201711211541495a14493df1368.jpg')
+[2017-11-21 15:41:50]set names utf8
+[2017-11-21 15:41:50]DESC cz_goods_attr
+[2017-11-21 15:41:50]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('2','1','1','0')
+[2017-11-21 15:41:50]set names utf8
+[2017-11-21 15:41:50]DESC cz_goods_attr
+[2017-11-21 15:41:50]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('2','2','1人','0')
+[2017-11-21 15:41:50]set names utf8
+[2017-11-21 15:41:50]DESC cz_goods_attr
+[2017-11-21 15:41:50]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('2','3','1','')
+[2017-11-21 15:50:40]set names utf8
+[2017-11-21 15:50:40]DESC cz_category
+[2017-11-21 15:50:40]select * from cz_category
+[2017-11-21 15:50:40]set names utf8
+[2017-11-21 15:50:40]DESC cz_goods_type
+[2017-11-21 15:50:40]select * from cz_goods_type ORDER BY type_id
+[2017-11-21 15:50:56]set names utf8
+[2017-11-21 15:50:56]DESC cz_attribute
+[2017-11-21 15:50:56]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-21 15:51:02]set names utf8
+[2017-11-21 15:51:02]DESC cz_goods
+[2017-11-21 15:51:02]INSERT INTO `cz_goods` (`goods_name`,`goods_sn`,`cat_id`,`brand_id`,`shop_price`,`market_price`,`promote_start_time`,`promote_end_time`,`goods_desc`,`add_time`,`is_best`,`is_new`,`is_hot`,`is_onsale`,`goods_img`) VALUES ('a1','a1','6','1','3010.00','3612.00','1243814400','1417305600','','1511279462','1','1','1','1','20171121/201711211551025a144b66df57a.jpg')
+[2017-11-21 15:51:02]set names utf8
+[2017-11-21 15:51:02]DESC cz_goods_attr
+[2017-11-21 15:51:02]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('3','1','a1','0')
+[2017-11-21 15:51:02]set names utf8
+[2017-11-21 15:51:02]DESC cz_goods_attr
+[2017-11-21 15:51:02]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('3','2','1人','0')
+[2017-11-21 15:51:02]set names utf8
+[2017-11-21 15:51:02]DESC cz_goods_attr
+[2017-11-21 15:51:02]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('3','3','1','')

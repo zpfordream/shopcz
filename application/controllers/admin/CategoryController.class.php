@@ -15,7 +15,7 @@ class CategoryController extends BaseController{
 
         $categoryModel  =  new CategoryModel('category');
         $cats           =  $categoryModel->getCats();
-        var_dump($cats);
+     //   var_dump($cats);
 
         include  CUR_VIEW_PATH."cat_add.html";
     }
@@ -51,7 +51,7 @@ class CategoryController extends BaseController{
 
         $categoryModel = new CategoryModel('category');
         $cats  = $categoryModel->getCats();
-        var_dump($cats);
+//        var_dump($cats);
         include  CUR_VIEW_PATH."cat_list.html";
     }
 
