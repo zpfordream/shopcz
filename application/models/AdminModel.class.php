@@ -16,6 +16,8 @@ class AdminModel extends Model{
     //验证用户是否合法
     public function checkUser($username,$password){
         $password = $password;
+        //本来应该是下面那条加密的，但是为了好测试，就先不用加密
+        //$password = md5($password);
         $sql = "select * from {$this->table} where admin_name= '$username' and password = '$password' limit 1";
         return $this->db->getRow($sql);
     }

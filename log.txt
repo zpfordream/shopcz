@@ -1437,3 +1437,384 @@
 [2017-11-21 15:51:02]set names utf8
 [2017-11-21 15:51:02]DESC cz_goods_attr
 [2017-11-21 15:51:02]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('3','3','1','')
+[2017-11-22 12:50:35]set names utf8
+[2017-11-22 12:50:35]DESC cz_category
+[2017-11-22 12:50:36]SELECT * from cz_category 
+[2017-11-22 12:51:22]set names utf8
+[2017-11-22 12:51:22]DESC cz_category
+[2017-11-22 12:51:22]SELECT * from cz_category 
+[2017-11-22 13:00:09]set names utf8
+[2017-11-22 13:00:09]DESC cz_category
+[2017-11-22 13:00:09]SELECT * from cz_category 
+[2017-11-22 13:54:38]set names utf8
+[2017-11-22 13:54:38]DESC cz_category
+[2017-11-22 13:54:38]SELECT * from cz_category 
+[2017-11-22 13:54:38]set names utf8
+[2017-11-22 13:54:38]DESC cz_goods
+[2017-11-22 13:54:38]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 13:55:05]set names utf8
+[2017-11-22 13:55:05]DESC cz_category
+[2017-11-22 13:55:05]SELECT * from cz_category 
+[2017-11-22 13:55:05]set names utf8
+[2017-11-22 13:55:05]DESC cz_goods
+[2017-11-22 13:55:05]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 13:57:16]set names utf8
+[2017-11-22 13:57:16]DESC cz_category
+[2017-11-22 13:57:16]SELECT * from cz_category 
+[2017-11-22 13:57:16]set names utf8
+[2017-11-22 13:57:16]DESC cz_goods
+[2017-11-22 13:57:16]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 13:57:58]set names utf8
+[2017-11-22 13:57:58]DESC cz_category
+[2017-11-22 13:57:58]SELECT * from cz_category 
+[2017-11-22 13:57:58]set names utf8
+[2017-11-22 13:57:58]DESC cz_goods
+[2017-11-22 13:57:58]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 13:57:59]set names utf8
+[2017-11-22 13:57:59]DESC cz_category
+[2017-11-22 13:57:59]SELECT * from cz_category 
+[2017-11-22 13:57:59]set names utf8
+[2017-11-22 13:57:59]DESC cz_goods
+[2017-11-22 13:57:59]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:01:24]set names utf8
+[2017-11-22 14:01:24]DESC cz_category
+[2017-11-22 14:01:24]SELECT * from cz_category 
+[2017-11-22 14:01:24]set names utf8
+[2017-11-22 14:01:24]DESC cz_goods
+[2017-11-22 14:01:24]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_category
+[2017-11-22 14:05:59]SELECT * from cz_category 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_goods
+[2017-11-22 14:05:59]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_category
+[2017-11-22 14:05:59]SELECT * from cz_category 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_goods
+[2017-11-22 14:05:59]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_category
+[2017-11-22 14:05:59]SELECT * from cz_category 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_goods
+[2017-11-22 14:05:59]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_category
+[2017-11-22 14:05:59]SELECT * from cz_category 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_goods
+[2017-11-22 14:05:59]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:05:59]DESC cz_category
+[2017-11-22 14:05:59]SELECT * from cz_category 
+[2017-11-22 14:05:59]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_category
+[2017-11-22 14:06:00]SELECT * from cz_category 
+[2017-11-22 14:06:00]set names utf8
+[2017-11-22 14:06:00]DESC cz_goods
+[2017-11-22 14:06:00]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:08:09]set names utf8
+[2017-11-22 14:08:09]DESC cz_category
+[2017-11-22 14:08:09]SELECT * from cz_category 
+[2017-11-22 14:08:09]set names utf8
+[2017-11-22 14:08:09]DESC cz_goods
+[2017-11-22 14:08:09]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:08:21]set names utf8
+[2017-11-22 14:08:21]DESC cz_category
+[2017-11-22 14:08:21]SELECT * from cz_category 
+[2017-11-22 14:08:21]set names utf8
+[2017-11-22 14:08:21]DESC cz_goods
+[2017-11-22 14:08:21]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:08:22]set names utf8
+[2017-11-22 14:08:22]DESC cz_category
+[2017-11-22 14:08:22]SELECT * from cz_category 
+[2017-11-22 14:08:22]set names utf8
+[2017-11-22 14:08:22]DESC cz_goods
+[2017-11-22 14:08:22]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:08:22]set names utf8
+[2017-11-22 14:08:22]DESC cz_category
+[2017-11-22 14:08:22]SELECT * from cz_category 
+[2017-11-22 14:08:22]set names utf8
+[2017-11-22 14:08:22]DESC cz_goods
+[2017-11-22 14:08:22]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:10:38]set names utf8
+[2017-11-22 14:10:38]DESC cz_category
+[2017-11-22 14:10:38]SELECT * from cz_category 
+[2017-11-22 14:10:38]set names utf8
+[2017-11-22 14:10:38]DESC cz_goods
+[2017-11-22 14:10:38]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:11:04]set names utf8
+[2017-11-22 14:11:04]DESC cz_admin
+[2017-11-22 14:11:04]select * from cz_admin where admin_name= 'user' and password = 'pass' limit 1
+[2017-11-22 14:11:20]set names utf8
+[2017-11-22 14:11:20]DESC cz_category
+[2017-11-22 14:11:20]select * from cz_category
+[2017-11-22 14:11:20]set names utf8
+[2017-11-22 14:11:20]DESC cz_goods_type
+[2017-11-22 14:11:20]select * from cz_goods_type ORDER BY type_id
+[2017-11-22 14:12:15]set names utf8
+[2017-11-22 14:12:15]DESC cz_attribute
+[2017-11-22 14:12:15]SELECT * from cz_attribute WHERE  type_id = 2
+[2017-11-22 14:12:17]set names utf8
+[2017-11-22 14:12:17]DESC cz_attribute
+[2017-11-22 14:12:17]SELECT * from cz_attribute WHERE  type_id = 0
+[2017-11-22 14:12:18]set names utf8
+[2017-11-22 14:12:18]DESC cz_attribute
+[2017-11-22 14:12:18]SELECT * from cz_attribute WHERE  type_id = 1
+[2017-11-22 14:12:29]set names utf8
+[2017-11-22 14:12:29]DESC cz_goods
+[2017-11-22 14:12:29]INSERT INTO `cz_goods` (`goods_name`,`goods_sn`,`cat_id`,`brand_id`,`shop_price`,`market_price`,`promote_start_time`,`promote_end_time`,`goods_desc`,`add_time`,`is_best`,`is_new`,`is_hot`,`is_onsale`,`goods_img`) VALUES ('a4','a4','4','2','3010.00','3612.00','1243814400','1417305600','','1511359949','1','1','1','1','20171122/201711221412295a1585cd47bc0.png')
+[2017-11-22 14:12:29]set names utf8
+[2017-11-22 14:12:29]DESC cz_goods_attr
+[2017-11-22 14:12:29]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('4','1','a4','0')
+[2017-11-22 14:12:29]set names utf8
+[2017-11-22 14:12:29]DESC cz_goods_attr
+[2017-11-22 14:12:29]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('4','2','2人','0')
+[2017-11-22 14:12:29]set names utf8
+[2017-11-22 14:12:29]DESC cz_goods_attr
+[2017-11-22 14:12:29]INSERT INTO `cz_goods_attr` (`goods_id`,`attr_id`,`attr_value`,`attr_price`) VALUES ('4','3','aaaaa','')
+[2017-11-22 14:12:36]set names utf8
+[2017-11-22 14:12:36]DESC cz_category
+[2017-11-22 14:12:36]SELECT * from cz_category 
+[2017-11-22 14:12:36]set names utf8
+[2017-11-22 14:12:36]DESC cz_goods
+[2017-11-22 14:12:36]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:13:27]set names utf8
+[2017-11-22 14:13:27]DESC cz_category
+[2017-11-22 14:13:27]SELECT * from cz_category 
+[2017-11-22 14:13:27]set names utf8
+[2017-11-22 14:13:27]DESC cz_goods
+[2017-11-22 14:13:27]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:15:03]set names utf8
+[2017-11-22 14:15:03]DESC cz_category
+[2017-11-22 14:15:03]SELECT * from cz_category 
+[2017-11-22 14:15:03]set names utf8
+[2017-11-22 14:15:03]DESC cz_goods
+[2017-11-22 14:15:03]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:15:25]set names utf8
+[2017-11-22 14:15:25]DESC cz_category
+[2017-11-22 14:15:25]SELECT * from cz_category 
+[2017-11-22 14:15:25]set names utf8
+[2017-11-22 14:15:25]DESC cz_goods
+[2017-11-22 14:15:25]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 14:23:37]set names utf8
+[2017-11-22 14:23:37]DESC cz_category
+[2017-11-22 14:23:37]SELECT * from cz_category 
+[2017-11-22 14:23:37]set names utf8
+[2017-11-22 14:23:37]DESC cz_goods
+[2017-11-22 14:23:37]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-22 15:22:25]set names utf8
+[2017-11-22 15:22:25]DESC cz_goods_type
+[2017-11-22 15:22:25]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:22:25]select count(*) from cz_goods_type
+[2017-11-22 15:22:29]set names utf8
+[2017-11-22 15:22:29]DESC cz_goods_type
+[2017-11-22 15:22:29]select * from cz_goods_type ORDER BY type_id
+[2017-11-22 15:22:29]set names utf8
+[2017-11-22 15:22:29]DESC cz_attribute
+[2017-11-22 15:22:29]select count(*) from cz_attribute where type_id = 1
+[2017-11-22 15:22:29]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-22 15:22:29]set names utf8
+[2017-11-22 15:22:29]DESC cz_goods_type
+[2017-11-22 15:22:29]select * from cz_goods_type ORDER BY type_id
+[2017-11-22 15:22:37]set names utf8
+[2017-11-22 15:22:37]DESC cz_goods_type
+[2017-11-22 15:22:37]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:22:37]select count(*) from cz_goods_type
+[2017-11-22 15:23:44]set names utf8
+[2017-11-22 15:23:44]DESC cz_goods_type
+[2017-11-22 15:23:44]select * from cz_goods_type ORDER BY type_id
+[2017-11-22 15:23:44]set names utf8
+[2017-11-22 15:23:44]DESC cz_attribute
+[2017-11-22 15:23:44]select count(*) from cz_attribute where type_id = 1
+[2017-11-22 15:23:44]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '1' limit 0,2
+[2017-11-22 15:23:44]set names utf8
+[2017-11-22 15:23:44]DESC cz_goods_type
+[2017-11-22 15:23:44]select * from cz_goods_type ORDER BY type_id
+[2017-11-22 15:24:02]set names utf8
+[2017-11-22 15:24:02]DESC cz_goods_type
+[2017-11-22 15:24:02]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:24:02]select count(*) from cz_goods_type
+[2017-11-22 15:25:56]set names utf8
+[2017-11-22 15:25:56]DESC cz_goods_type
+[2017-11-22 15:25:56]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:25:56]select count(*) from cz_goods_type
+[2017-11-22 15:26:24]set names utf8
+[2017-11-22 15:26:24]DESC cz_goods_type
+[2017-11-22 15:26:24]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:26:24]select count(*) from cz_goods_type
+[2017-11-22 15:27:34]set names utf8
+[2017-11-22 15:27:34]DESC cz_goods_type
+[2017-11-22 15:27:34]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:27:34]select count(*) from cz_goods_type
+[2017-11-22 15:27:35]set names utf8
+[2017-11-22 15:27:35]DESC cz_goods_type
+[2017-11-22 15:27:35]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-22 15:27:35]select count(*) from cz_goods_type

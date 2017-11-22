@@ -27,6 +27,9 @@ class LoginController extends  Controller{
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
         //2. 验证处理数据
+        $this->helper('input');
+        $username = deepslashes($username);
+        $password = deepslashes($password);
         //3. 调用模型来进行验证，给出提示
         $adminModel = new AdminModel('admin');
         $userinfo = $adminModel->checkUser($username, $password);
