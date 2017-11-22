@@ -8,7 +8,7 @@
 
 class CategoryModel extends Model{
 
-    //获取所有的分类信息
+    //后台获取所有的分类信息
     public function  getCats(){
 
         $sql = "select * from {$this->table}";
@@ -36,7 +36,7 @@ class CategoryModel extends Model{
         return $tree;
     }
 
-    //定义一个方法，获取一个节点的所有子节点
+    //后台，定义一个方法，获取一个节点的所有子节点
     public function getSubIds($pid){
         $sql  = "select * from {$this->table}";
         $cats =  $this ->db->getAll($sql);
@@ -47,5 +47,10 @@ class CategoryModel extends Model{
         }
         return $list;
     }
+
+
+
+    //前台，找到子节点，就继续找，并将其保存到 下标为child的元素中，将二维护组转化成多维数组
+
 
 }
