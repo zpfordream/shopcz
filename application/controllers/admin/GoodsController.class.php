@@ -70,7 +70,7 @@ class GoodsController extends BaseController{
         $goodsModel = new GoodsModel('goods');
         if($goods_id = $goodsModel->insert($data)){
 
-            //收集表单，准备插入goods_attr表
+            //收集表单，准备插入goods_attr表， html的name等于数组，自己累加就是索引数组
             $attr_ids = $_POST['attr_id_list'];
             $attr_values = $_POST['attr_value_list'];
             $attr_price = $_POST['attr_price_list'];

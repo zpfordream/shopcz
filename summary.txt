@@ -1,18 +1,2 @@
-1.    application ÎªÓ¦ÓÃ³ÌÐòÄ¿Â¼
-      framework   Îª¿ò¼ÜÄ¿Â¼
-      public      Ç°Ì¨¾²Ì¬×ÊÔ´Ä¿Â¼
-      index.php   Èë¿ÚÎÄ¼þ          
-
-2.    ÀàÃû£¬ÓÃ´óÍÕ·åÊ½£¬ÈçGoodsController £¬Ê××ÖÄ¸´óÐ´£¬¶ÔÓ¦µÄÎÄ¼þÃû GoodsController.class.php
-      ·½·¨Ãû£¬Ê¹ÓÃÐ¡ÍÕ·åÊ½£¬addAction£¬Ê××ÖÄ¸Ð¡Ð´
-      ÊôÐÔÃû£¬Ò²ÓÃÐ¡ÍÕ·åÊ½£¬ÓÐÊ±ºò»á¶ÔprivateÔ¼ÊøµÄÊôÐÔÇ°Ãæ¼ÓÒ»¸öÏÂ»®Ïß_(ÍÆ¼ö)
-      º¯ÊýÃû£¬ÑÏ¸ñÇø·Ö´óÐ¡Ð´¡£
-
-3.   ¶¨ÒåºËÐÄÆô¶¯Àà£¬ÈÃÏîÄ¿runÆðÀ´
-
-4. ÏîÄ¿°²È«£¬ÓÐÈý¸öÎÊÌâ£º
-    Ò»ÊÇ£º¶ñÒâ¹¥»÷£¬±©Á¦ÆÆ½â¡£       ½â¾ö·½·¨£º ¼ÓÑéÖ¤Âë
-    ¶þÊÇ£ºsql×¢Èë,ÔÚ±íµ¥ÖÐÌîÈëÌØÊâµÄ×Ö·û »òÕß ÊÇ urlÖÐÔö¼ÓÌØÊâµÄ×Ö·û£¬È»ºóÏëÊý¾Ý¿â·¢ÆðÇëÇó£¬Æ´´Õ³ösqlÓï¾ä£¬´ïµ½¹¥»÷µÄÄ¿µÄ¡£
-          Á½ÖÖÐÎÊ½£º post±íµ¥Ìá½» ºÍ get£¬url´«²Î
-          ÍòÄÜÃÜÂë£º Password = ¡® xxx' or ¡®1 ¡® £¬½â¾ö·½Ê½£¬
-    ÈýÊÇ£ºxss¹©¸ø
+1. å¦‚æžœwampçŽ¯å¢ƒå¯åŠ¨ä¸äº†
+  æŽ§åˆ¶é¢æ¿ -ã€‹ç³»ç»Ÿå’Œå®‰å…¨ -ã€‹ç®¡ç†å·¥å…· -ã€‹ windowsæ—¥å¿— -ã€‹åº”ç”¨ç¨‹åº

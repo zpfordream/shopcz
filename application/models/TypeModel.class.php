@@ -15,9 +15,11 @@ class TypeModel extends Model{
         return $this->db->getAll($sql);
     }
 
-    //获取分页的商品类型
+    //获取分页的商品类型，改进版，加入了分组函数，分组主要是以便于以后的计算
     public function getPageTypes($offset,$pagesize){
-        $sql = "SELECT * FROM {$this->table} ORDER BY type_id LIMIT $offset,$pagesize";
+        $sql = "SELECT a.*,COUNT(b.attr_name) AS num  FROM {$this->table} as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT $offset,$pagesize";
         return $this->db->getAll($sql);
     }
 }
+

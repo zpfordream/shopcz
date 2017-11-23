@@ -30,7 +30,7 @@
             <?php foreach($types as $type ): ?>
 			<tr>
 				<td class="first-cell"><span onclick="javascript:listTable.edit(this, 'edit_type_name', 1)"><?php echo $type['type_name']; ?></span></td>
-				<td align="center">属性数</td>
+				<td align="center"><?php echo $type['num']; ?></td>
 				<td align="center"><img src="application/views/admin/images/yes.gif"></td>
 				<td align="center">
 				  <a href="index.php?p=admin&c=attribute&a=index&type_id=<?php echo $type['type_id']; ?>" title="属性列表">属性列表</a> |

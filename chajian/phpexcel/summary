@@ -1,0 +1,3 @@
+1. 官网下载phpexcel  https://github.com/PHPOffice/PHPExcel
+
+2. 解压后提取 classes文件夹到工作目录，并且重新命名为 PHPExcel

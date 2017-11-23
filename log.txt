@@ -1818,3 +1818,124 @@
 [2017-11-22 15:27:35]DESC cz_goods_type
 [2017-11-22 15:27:35]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
 [2017-11-22 15:27:35]select count(*) from cz_goods_type
+[2017-11-23 12:47:35]set names utf8
+[2017-11-23 12:47:35]DESC cz_category
+[2017-11-23 12:47:35]SELECT * from cz_category 
+[2017-11-23 12:47:35]set names utf8
+[2017-11-23 12:47:35]DESC cz_goods
+[2017-11-23 12:47:35]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-11-23 12:47:54]set names utf8
+[2017-11-23 12:47:54]DESC cz_admin
+[2017-11-23 12:47:54]select * from cz_admin where admin_name= 'user' and password = 'pass' limit 1
+[2017-11-23 12:47:59]set names utf8
+[2017-11-23 12:47:59]DESC cz_category
+[2017-11-23 12:47:59]select * from cz_category
+[2017-11-23 12:48:00]set names utf8
+[2017-11-23 12:48:00]DESC cz_goods_type
+[2017-11-23 12:48:00]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-23 12:48:00]select count(*) from cz_goods_type
+[2017-11-23 12:48:02]set names utf8
+[2017-11-23 12:48:02]DESC cz_goods_type
+[2017-11-23 12:48:02]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-23 12:48:02]select count(*) from cz_goods_type
+[2017-11-23 12:48:06]set names utf8
+[2017-11-23 12:48:06]DESC cz_goods_type
+[2017-11-23 12:48:06]SELECT * FROM cz_goods_type ORDER BY type_id LIMIT 0,2
+[2017-11-23 12:48:06]select count(*) from cz_goods_type
+[2017-11-23 13:13:39]set names utf8
+[2017-11-23 13:13:39]DESC cz_goods_type
+[2017-11-23 13:13:39]SELECT a.*,COUNT(b.attr_name) AS num  FROM cz_goods_type as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT 0,2
+[2017-11-23 13:13:39]select count(*) from cz_goods_type
+[2017-11-23 13:13:48]set names utf8
+[2017-11-23 13:13:48]DESC cz_goods_type
+[2017-11-23 13:13:48]SELECT a.*,COUNT(b.attr_name) AS num  FROM cz_goods_type as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT 2,2
+[2017-11-23 13:13:48]select count(*) from cz_goods_type
+[2017-11-23 13:13:51]set names utf8
+[2017-11-23 13:13:51]DESC cz_goods_type
+[2017-11-23 13:13:51]SELECT a.*,COUNT(b.attr_name) AS num  FROM cz_goods_type as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT 0,2
+[2017-11-23 13:13:51]select count(*) from cz_goods_type
+[2017-11-23 13:14:15]set names utf8
+[2017-11-23 13:14:15]DESC cz_category
+[2017-11-23 13:14:15]select * from cz_category
+[2017-11-23 13:14:15]set names utf8
+[2017-11-23 13:14:15]DESC cz_goods_type
+[2017-11-23 13:14:15]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:14:16]set names utf8
+[2017-11-23 13:14:16]DESC cz_goods_type
+[2017-11-23 13:14:16]SELECT a.*,COUNT(b.attr_name) AS num  FROM cz_goods_type as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT 0,2
+[2017-11-23 13:14:16]select count(*) from cz_goods_type
+[2017-11-23 13:14:18]set names utf8
+[2017-11-23 13:14:18]DESC cz_category
+[2017-11-23 13:14:18]select * from cz_category
+[2017-11-23 13:14:19]set names utf8
+[2017-11-23 13:14:19]DESC cz_goods_type
+[2017-11-23 13:14:19]SELECT a.*,COUNT(b.attr_name) AS num  FROM cz_goods_type as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT 0,2
+[2017-11-23 13:14:19]select count(*) from cz_goods_type
+[2017-11-23 13:14:28]set names utf8
+[2017-11-23 13:14:28]DESC cz_goods_type
+[2017-11-23 13:14:28]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:14:28]set names utf8
+[2017-11-23 13:14:28]DESC cz_attribute
+[2017-11-23 13:14:28]select count(*) from cz_attribute where type_id = 3
+[2017-11-23 13:14:28]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '3' limit 0,2
+[2017-11-23 13:14:28]set names utf8
+[2017-11-23 13:14:28]DESC cz_goods_type
+[2017-11-23 13:14:28]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:14:31]set names utf8
+[2017-11-23 13:14:31]DESC cz_goods_type
+[2017-11-23 13:14:31]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:14:49]set names utf8
+[2017-11-23 13:14:49]DESC cz_attribute
+[2017-11-23 13:14:49]INSERT INTO `cz_attribute` (`attr_name`,`type_id`,`attr_type`,`attr_input_type`,`attr_value`) VALUES ('持有人','3','0','0','')
+[2017-11-23 13:14:52]set names utf8
+[2017-11-23 13:14:52]DESC cz_goods_type
+[2017-11-23 13:14:52]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:14:52]set names utf8
+[2017-11-23 13:14:52]DESC cz_attribute
+[2017-11-23 13:14:52]select count(*) from cz_attribute where type_id = 3
+[2017-11-23 13:14:52]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '3' limit 0,2
+[2017-11-23 13:14:52]set names utf8
+[2017-11-23 13:14:52]DESC cz_goods_type
+[2017-11-23 13:14:52]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:14:56]set names utf8
+[2017-11-23 13:14:56]DESC cz_goods_type
+[2017-11-23 13:14:56]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:15:17]set names utf8
+[2017-11-23 13:15:17]DESC cz_attribute
+[2017-11-23 13:15:17]INSERT INTO `cz_attribute` (`attr_name`,`type_id`,`attr_type`,`attr_input_type`,`attr_value`) VALUES ('大小','3','0','1','大
+中
+小')
+[2017-11-23 13:15:20]set names utf8
+[2017-11-23 13:15:20]DESC cz_goods_type
+[2017-11-23 13:15:20]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:15:20]set names utf8
+[2017-11-23 13:15:20]DESC cz_attribute
+[2017-11-23 13:15:20]select count(*) from cz_attribute where type_id = 3
+[2017-11-23 13:15:20]SELECT a.*,b.type_name FROM cz_attribute as a INNER JOIN cz_goods_type AS b ON a.type_id = b.type_id WHERE a.type_id = '3' limit 0,2
+[2017-11-23 13:15:20]set names utf8
+[2017-11-23 13:15:20]DESC cz_goods_type
+[2017-11-23 13:15:20]select * from cz_goods_type ORDER BY type_id
+[2017-11-23 13:15:25]set names utf8
+[2017-11-23 13:15:25]DESC cz_goods_type
+[2017-11-23 13:15:25]SELECT a.*,COUNT(b.attr_name) AS num  FROM cz_goods_type as a LEFT JOIN `cz_attribute` as b
+                ON a.type_id = b.type_id GROUP BY a.type_id ORDER BY a.type_id DESC LIMIT 0,2
+[2017-11-23 13:15:25]select count(*) from cz_goods_type
+[2017-11-23 13:43:45]set names utf8
+[2017-11-23 13:43:45]DESC cz_category
+[2017-11-23 13:43:45]select * from cz_category
+[2017-11-23 13:43:50]set names utf8
+[2017-11-23 13:43:50]DESC cz_category
+[2017-11-23 13:43:50]select * from `cz_category` where `cat_id`=1
+[2017-11-23 13:43:50]select * from cz_category
+[2017-11-23 13:44:28]set names utf8
+[2017-11-23 13:44:28]DESC cz_category
+[2017-11-23 13:44:28]select * from cz_category
+[2017-11-23 13:44:30]set names utf8
+[2017-11-23 13:44:30]DESC cz_category
+[2017-11-23 13:44:30]select * from `cz_category` where `cat_id`=6
+[2017-11-23 13:44:30]select * from cz_category
