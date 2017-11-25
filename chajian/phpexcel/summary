@@ -1,3 +1,14 @@
 1. 官网下载phpexcel  https://github.com/PHPOffice/PHPExcel
+ . 解压后提取 classes文件夹到工作目录，并且重新命名为 PHPExcel
+   然后实例化 PHPExcel.php
 
-2. 解压后提取 classes文件夹到工作目录，并且重新命名为 PHPExcel
+2. 导出步骤：
+         1. 新建一个excel 表格，即实例化PHPExcel.php类,实例化以后就自动建了一个表格
+         2. 创建sheet（内置表），createSheet（）， setActiveSheetIndex()，getActiveSheet()方法
+         3. 填充数据， setCellValue方法
+         4. 保存文件，PHPExcel_IOFactory::createWriter($objPHPExcel,"Excel2007");和$objWriter->save("./demo1.xlsx");
+
+3. 导入步骤：
+        1. 实例化excel读取对象。
+        2. 加在excel文件， 有两种 全部加载 和 选择加载。 全部加载是说把所有的sheet 全部加载进去，选择加载是选择sheet 进行加载。
+        3. 读取excel文件，有两种全部读取和逐行读取。
