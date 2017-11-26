@@ -12,3 +12,6 @@
         1. 实例化excel读取对象。
         2. 加在excel文件， 有两种 全部加载 和 选择加载。 全部加载是说把所有的sheet 全部加载进去，选择加载是选择sheet 进行加载。
         3. 读取excel文件，有两种全部读取和逐行读取。
+
+
+4. 为了测试 ，创建 chajian数据库  ，然后创建表phpexcel_test， 5个字段 id  username score class grade
