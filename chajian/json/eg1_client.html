@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eg1</title>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<!--http://127.0.0.1/shoucz/chajian/json/eg1_client.html-->
+
+
+
+<body>
+    <script type="text/javascript">
+
+            $("document").ready( function(){
+                //alert(1);//判断加载成功
+                var url = "eg1_server.php?inAjax=1&do=checkMember&username=abcde";
+                var data ={};
+
+                $.get(url ,data,function(res){
+                    var jsonObj = eval( "("+ res +")");
+                    $("#username").val(jsonObj.username);
+                    $("#groupname").val(jsonObj.groupname);
+                    $("#uid").val(jsonObj.uid);
+                });
+
+            });
+
+    </script>
+
+    <label for="username">用户名</label><input type="text" name="username" id="username">
+    <br>
+    <label for="groupname">会员组</label><input type="text" name="groupname" id="groupname">
+    <br>
+    <label for="uid">id</label><input type="text" name="uid" id="uid">
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eg2</title>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+
+<!--http://127.0.0.1/shoucz/chajian/json/eg2_client.html-->
+
+<script type="text/javascript">
+
+    $("document").ready( function(){
+
+        var url = "eg2_server.php";
+        var data ={"do":"first"};
+
+        $.getJSON(url,data,function(res){
+            $("#username").val(res.username);
+            $("#password").val(res.password);
+        });
+
+        var data1 ={"do":"second"};
+
+        $.getJSON(url,data1,function(res){
+//            $("#members").val(res.third.members.username);
+            $("#members").val(res[1].username);  //数字，不能写成 res.1.username ,是错误的，必须写成res[1].username
+
+        });
+
+        var data ={"do":"third"};
+
+        $.getJSON(url,data,function(res){
+
+            $("#address").val(res.address); //取到整个数组，这个参数
+            $("#address").val(res.address[1]); //取到数组，然后再取第二个值，不能用res.address.1   ,因为是数组只能附属到前一个变量处，不能单独拉出来，如果是关联数组，则可以拉出，如res.address.abc
+
+        });
+
+
+    });
+
+</script>
+
+<h2>一维数组</h2>
+<label for="username">用户名</label><input type="text" name="username" id="username">
+<br>
+<label for="password">密码</label><input type="password" name="password" id="password">
+
+<h2>二维数组（展示一组会员信息）</h2>
+<textarea id="members"></textarea>
+
+<h2>对象实战（放一组地址信息）</h2>
+<textarea name="address" id="address" ></textarea>
+
+
+</body>
+</html>
