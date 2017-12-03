@@ -30,6 +30,10 @@ class IndexController extends  BaseController{
     }
 
     public  function menuAction(){
+
+        $menuModel = new IndexModel("admin_nav");
+        $menus = $menuModel->getNavs();
+//        var_dump($menus);
         include CUR_VIEW_PATH."menu.html";
     }
 

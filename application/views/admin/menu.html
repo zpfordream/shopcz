@@ -43,25 +43,22 @@
 	<div id="main-div">
 		<div id="menu-list">
 			<ul id="menu-ul">
-				<li class="explode" key="02_cat_and_goods" name="menu"> 商品管理        
-					<ul>
-						 
-						  <li class="menu-item"><a href="index.php?p=admin&c=category&a=index" target="main-frame">商品分类</a></li>
-						  <li class="menu-item"><a href="index.php?p=&c=$a=" target="main-frame">商品品牌</a></li>
-						  <li class="menu-item"><a href="index.php?p=admin&c=type&a=index" target="main-frame">商品类型</a></li>
-						  <li class="menu-item"><a href="index.php?p=admin&c=goods&a=add" target="main-frame">添加新商品</a></li>
-						  <li class="menu-item"><a href="index.php?p=admin&c=goods&a=index" target="main-frame">商品列表</a></li>
-					</ul>
-				</li>
+                <!--这一块导航栏逻辑比较复杂，1.先用pid=0，判断是不是顶级导航，顶级导航不带链接，非顶级导航带链接-->
+                <!--2.非顶级导航，带链接，但是链接是“admin/nav/aaa”的形式，用explode函数分割，然后拼在url上-->
+                <?php foreach($menus as $menu): ?>
+                    <?php if( $menu['pid'] != 0  ): ?>
+                        <li class="menu-item">
+                            <?php $arr = explode("/",$menu['mvc']); ?>
+                            <?php echo '<a href="index.php?p='.$arr['0'].'&c='.$arr['1'].'&a='.$arr['2'].'" target="main-frame"> ' ; ?>
+                            <!--<a href="index.php?p="<?php echo $arr['0'];?>"&c="<?php echo $arr['1'];?>"&a="<?php echo $arr['2'];?> target="main-frame">-->
+                            <?php echo str_repeat("&nbsp;&nbsp;&nbsp;",$menu['level']); ?>
+                            <?php echo $menu['name']; ?>
 
-				<li class="explode" key="04_order" name="menu"> 订单管理        
-					<ul style="display: block;">
-						<li class="menu-item"><a href="order.php?act=list" target="main-frame">订单列表</a></li>
-						<li class="menu-item"><a href="order.php?act=add" target="main-frame">添加订单</a></li>
-						<li class="menu-item"><a href="order.php?act=delivery_list" target="main-frame">发货单列表</a></li>
-						<li class="menu-item"><a href="order.php?act=back_list" target="main-frame">退货单列表</a></li>
-					</ul>
-				</li>				
+                            </a></li>
+                    <?php else :  ?>
+                        <li class="menu-item"><?php echo $menu['name']; ?></li>
+                    <?php endif ;  ?>
+                <?php endforeach ; ?>
 			</ul>
 		</div>
 		<div id="help-div" style="display:none">

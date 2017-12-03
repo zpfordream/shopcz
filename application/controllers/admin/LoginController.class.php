@@ -31,7 +31,7 @@ class LoginController extends  Controller{
         $username = deepslashes($username);
         $password = deepslashes($password);
         //3. 调用模型来进行验证，给出提示
-        $adminModel = new AdminModel('admin');
+        $adminModel = new AdminModel('user');
         $userinfo = $adminModel->checkUser($username, $password);
         if (empty($userinfo)) {
             //不存在该用户
