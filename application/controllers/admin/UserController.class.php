@@ -84,7 +84,6 @@ class UserController extends BaseController{
         $userModel = new UserModel('user');
         $users  = $userModel->getUsers();
         var_dump($users);
-        exit;
         include  CUR_VIEW_PATH."user_list.html";
     }
 
@@ -101,8 +100,15 @@ class UserController extends BaseController{
 
         $userModel = new UserModel('user');
         $user     =  $userModel->selectByPk($user_id);
+        $oneInGroup = $userModel->oneInGroup($user_id);
 
+        $groupModel = new GroupModel("auth_group");
+        $groups = $groupModel->getGroups();
+
+        var_dump($oneInGroup);
+//        var_dump($groups);
 //        var_dump($user);
+//        exit;
         //3.载入编辑表单
         include  CUR_VIEW_PATH."user_edit.html";
     }

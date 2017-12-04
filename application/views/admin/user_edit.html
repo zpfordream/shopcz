@@ -33,6 +33,22 @@
 				<td class="label">邮箱:</td>
 				<td><input type="text" name="email" value="<?php  echo $user['email']; ?>" size="15"></td>
 			</tr>
+			<tr>
+				<td class="label">状态:</td>
+				<td><input type="radio" name="radio"  checked = <?php  echo $user['status'] ? "cheked" :"" ; ?>   size="15">允许登录
+					<input type="radio" name="radio"  cheked = <?php  echo $user['status'] ? "" : "cheked  " ; ?>   size="15">禁止登录</td>
+			</tr>
+			<tr>
+				<td class="label">管理组:</td>
+				<td><?php foreach( $groups as $group ) : ?>
+						<?php if( in_array($group['id'] , $oneInGroup) ):  ?>
+						<input type="checkbox" checked name="check" value="" ><?php echo $group['title'] ;?>
+						<?php else:  ?>
+						<input type="checkbox" name="check"  value="" ><?php echo $group['title'] ;?>
+						<?php endif ;?>
+					<?php endforeach ;?>
+				</td>
+			</tr>
       </tbody></table>
       <div class="button-div">
         <input type="submit" value=" 确定 ">
