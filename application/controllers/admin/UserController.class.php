@@ -23,8 +23,8 @@ class UserController extends BaseController{
     //插入后台的数据 http://127.0.0.1/shopcz/index.php?p=admin&c=user&a=insert
     public function  insertAction(){
 
-        var_dump($_POST);
-        exit();
+//        var_dump($_POST);
+//        exit();
 
         //1. 收集表单数据
         $data['user_name']      =    trim($_POST['user_name']);
@@ -139,15 +139,18 @@ class UserController extends BaseController{
             $this->jump("index.php?p=admin&c=user&a=add","email不能为空",3);
         }
 
-        $userModel = new UserModel("user");
+
 
         //3. 调用模型完成更新操作, 更新函数返回的是影响的行数，不用返回id，因为更新本来就知道id
         //修改a表和c表，通过b表关联，修改b表的内容时，不能通过id找到后修改，而是把原来的关联表内容删除后，再重新插入关联数据
+        $userModel = new UserModel("user");
+
         if($userModel->update($data)){
 
             //实例化关联表，用户和组的关联表
             $auth_group_id = new Model("auth_group_id");
 
+            $auth_group_id->deleteNotById("uid" ,$data['user_id'] );
 
             //拿到a表的id，然后和b表的内容 ，拼在一起插入b表
             foreach( $data['groups'] as $group_id) {
@@ -157,33 +160,35 @@ class UserController extends BaseController{
                     "groud_id" => $group_id,
                 );
 
-                $auth_group_id->update($group);
+                $auth_group_id->insert($group);
             }
             $this->jump("index.php?p=admin&c=user&a=index","更新成功",2);
         }else{
-            $this->jump("index.php?p=admin&c=user&a=edit&cat_id=".$data['user_id'],"更新失败",3);
+            $this->jump("index.php?p=admin&c=user&a=edit&user_id=".$data['user_id'],"啥都没动？就更新失败",3);
         }
 
     }
 
     //删除商品分类
     public function deleteAction(){
-        //1. 获取cat_id，作为条件
+        //1. 获取user_id，作为条件
         $user_id = $_GET['user_id'] + 0;
         //2. 做一些相应的判断
-        //如果不是叶子分类，则不允许删除
-        $userModel = new UserModel("user");
 
         //3. 调用模型，完成删除，并给出提示
+        $userModel = new UserModel("user");
+
+        //实例化关联表，用户和组的关联表
+        $auth_group_id = new Model("auth_group_id");
+
+        $auth_group_id->deleteNotById("uid" ,$user_id );
+
         if ($userModel->delete($user_id)){
+
             $this->jump('index.php?p=admin&c=user&a=index',"删除用户成功",2);
         }else {
             $this->jump('index.php?p=admin&c=user&a=index',"删除用户失败",3);
         }
     }
-
-
-
-
 
 }

@@ -29,9 +29,9 @@
 					<td align="left" class="first-cell">
 						<span><?php echo $group['id']; ?></span>
 					 </td>
-					<td width="20%"><?php echo $group['title']; ?></td>
+					<td width="40%"><?php echo $group['title']; ?></td>
                     <td width="50%" align="center">
-                        <a href="index.php?p=admin&c=group&a=con_auth&id=<?php echo $group['id']; ?>">分配权限</a> |
+                        <a href="index.php?p=admin&c=group&a=configauth&id=<?php echo $group['id']; ?>">分配权限</a> |
                         <a href="index.php?p=admin&c=group&a=edit">添加用户</a> |
 						<a href="index.php?p=admin&c=group&a=edit&id=<?php echo $group['id']; ?>">编辑用户组</a> |
 						<a href="index.php?p=admin&c=group&a=delete&id=<?php echo $group['id']; ?>" onclick="javascript:return confirm('您确认要删除这条记录吗?');" title="移除">移除</a>

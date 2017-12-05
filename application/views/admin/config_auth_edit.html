@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SHOP 管理中心 - 分配权限 </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="application/views/admin/styles/general.css" rel="stylesheet" type="text/css" />
+<link href="application/views/admin/styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>
+<span class="action-span"><a href="index.php?p=admin&c=group&a=index">用户组列表</a></span>
+<span class="action-span1"><a href="index.php?p=admin&c=access&a=add">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 分配权限 </span>
+<div style="clear:both"></div>
+</h1>
+<!-- start add new category form -->
+<div class="main-div">
+  <form action="index.php?p=admin&c=group&a=updateconfigAuth" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+	 <table width="100%" id="general-table">
+		<tbody>
+			<tr>
+				<td class="label">权限组:</td>
+				<td><?php echo $group['title'] ; ?></td>
+			</tr>
+			<tr>
+				<td class="label">权限分配:</td>
+				<td>
+					<?php foreach($accesses as $access ): ?>
+						<input type="checkbox" name="acces[]" value="<?php echo $access['id'] ;?>"   ><?php echo $access['title'] ;?> <br/>
+						<?php foreach($access['child'] as $v ): ?>
+					<?php echo "----" ; ?><input type="checkbox" name="acces[]" value="<?php echo $v['id'] ;?>"    ><?php echo $v['title'] ;?><br/>
+							<?php foreach($v['child'] as $v1 ): ?>
+					<?php echo "--------" ; ?><input type="checkbox" name="acces[]" value="<?php echo $v1['id'] ;?>"   ><?php echo $v1['title'] ;?><br/>
+							<?php endforeach; ?>
+						<?php endforeach; ?>
+
+					<?php endforeach; ?>
+
+				</td>
+			</tr>
+
+
+      </tbody></table>
+      <div class="button-div">
+        <input type="submit" value=" 确定 ">
+        <input type="reset" value=" 重置 ">
+      </div>
+    <input type="hidden" name="act" value="insert">
+    <input type="hidden" name="id" value="<?php echo $group['id'] ; ?>">
+  </form>
+</div>
+
+
+
+<div id="footer">
+	版权所有 &copy; 2012-2013 传智播客 - PHP培训 - 
+</div>
+
+</div>
+
+</body>
+</html>

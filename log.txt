@@ -1382,3 +1382,736 @@
 [2017-12-05 14:27:37]DESC cz_user
 [2017-12-05 14:27:37]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
               join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 20:54:48]set names utf8
+[2017-12-05 20:54:48]DESC cz_category
+[2017-12-05 20:54:48]SELECT * from cz_category 
+[2017-12-05 20:54:48]set names utf8
+[2017-12-05 20:54:48]DESC cz_goods
+[2017-12-05 20:54:48]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-12-05 20:55:14]set names utf8
+[2017-12-05 20:55:14]DESC cz_user
+[2017-12-05 20:55:14]select * from cz_user where user_name= 'user' and password = 'pass' limit 1
+[2017-12-05 20:55:17]set names utf8
+[2017-12-05 20:55:17]DESC cz_admin_nav
+[2017-12-05 20:55:17]select * from cz_admin_nav
+[2017-12-05 20:55:57]set names utf8
+[2017-12-05 20:55:57]DESC cz_user
+[2017-12-05 20:55:57]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 20:56:07]set names utf8
+[2017-12-05 20:56:07]DESC cz_user
+[2017-12-05 20:56:07]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 20:56:09]set names utf8
+[2017-12-05 20:56:09]DESC cz_user
+[2017-12-05 20:56:09]select * from `cz_user` where `user_id`=15
+[2017-12-05 20:56:09]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 20:56:09]set names utf8
+[2017-12-05 20:56:09]DESC cz_auth_group
+[2017-12-05 20:56:09]select * from cz_auth_group
+[2017-12-05 20:56:26]set names utf8
+[2017-12-05 20:56:26]DESC cz_user
+[2017-12-05 20:56:26]UPDATE `cz_user` SET `user_name`='user5',`password`='pass5',`email`='user5@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 20:56:26]set names utf8
+[2017-12-05 20:56:26]DESC cz_auth_group_id
+[2017-12-05 20:56:26]DELETE FROM `cz_auth_group_id` WHERE `id`=15
+[2017-12-05 20:56:26]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','2')
+[2017-12-05 20:56:26]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','3')
+[2017-12-05 20:56:28]set names utf8
+[2017-12-05 20:56:28]DESC cz_user
+[2017-12-05 20:56:28]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 20:57:20]set names utf8
+[2017-12-05 20:57:20]DESC cz_user
+[2017-12-05 20:57:20]select * from `cz_user` where `user_id`=15
+[2017-12-05 20:57:20]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 20:57:20]set names utf8
+[2017-12-05 20:57:20]DESC cz_auth_group
+[2017-12-05 20:57:20]select * from cz_auth_group
+[2017-12-05 20:57:24]set names utf8
+[2017-12-05 20:57:24]DESC cz_user
+[2017-12-05 20:57:24]UPDATE `cz_user` SET `user_name`='user5',`password`='pass5',`email`='user5@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 20:57:28]set names utf8
+[2017-12-05 20:57:28]DESC cz_user
+[2017-12-05 20:57:28]select * from `cz_user` where `user_id`=0
+[2017-12-05 20:57:28]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 20:57:28]set names utf8
+[2017-12-05 20:57:28]DESC cz_auth_group
+[2017-12-05 20:57:28]select * from cz_auth_group
+[2017-12-05 20:57:50]set names utf8
+[2017-12-05 20:57:50]DESC cz_user
+[2017-12-05 20:57:50]select * from `cz_user` where `user_id`=0
+[2017-12-05 20:57:50]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 20:57:50]set names utf8
+[2017-12-05 20:57:50]DESC cz_auth_group
+[2017-12-05 20:57:50]select * from cz_auth_group
+[2017-12-05 20:57:56]set names utf8
+[2017-12-05 20:57:56]DESC cz_user
+[2017-12-05 20:57:56]select * from `cz_user` where `user_id`=0
+[2017-12-05 20:57:56]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 20:57:56]set names utf8
+[2017-12-05 20:57:56]DESC cz_auth_group
+[2017-12-05 20:57:56]select * from cz_auth_group
+[2017-12-05 20:57:58]set names utf8
+[2017-12-05 20:57:58]DESC cz_user
+[2017-12-05 20:57:58]select * from `cz_user` where `user_id`=0
+[2017-12-05 20:57:58]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 20:57:58]set names utf8
+[2017-12-05 20:57:58]DESC cz_auth_group
+[2017-12-05 20:57:58]select * from cz_auth_group
+[2017-12-05 20:57:59]set names utf8
+[2017-12-05 20:57:59]DESC cz_user
+[2017-12-05 20:57:59]select * from `cz_user` where `user_id`=15
+[2017-12-05 20:57:59]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 20:57:59]set names utf8
+[2017-12-05 20:57:59]DESC cz_auth_group
+[2017-12-05 20:57:59]select * from cz_auth_group
+[2017-12-05 20:58:02]set names utf8
+[2017-12-05 20:58:02]DESC cz_user
+[2017-12-05 20:58:02]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 20:58:04]set names utf8
+[2017-12-05 20:58:04]DESC cz_user
+[2017-12-05 20:58:04]select * from `cz_user` where `user_id`=15
+[2017-12-05 20:58:04]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 20:58:04]set names utf8
+[2017-12-05 20:58:04]DESC cz_auth_group
+[2017-12-05 20:58:04]select * from cz_auth_group
+[2017-12-05 20:58:12]set names utf8
+[2017-12-05 20:58:12]DESC cz_user
+[2017-12-05 20:58:12]UPDATE `cz_user` SET `user_name`='user5',`password`='pass5',`email`='user5@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 20:58:15]set names utf8
+[2017-12-05 20:58:15]DESC cz_user
+[2017-12-05 20:58:15]select * from `cz_user` where `user_id`=0
+[2017-12-05 20:58:15]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 20:58:15]set names utf8
+[2017-12-05 20:58:15]DESC cz_auth_group
+[2017-12-05 20:58:15]select * from cz_auth_group
+[2017-12-05 20:58:18]set names utf8
+[2017-12-05 20:58:18]DESC cz_user
+[2017-12-05 20:58:18]select * from `cz_user` where `user_id`=15
+[2017-12-05 20:58:18]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 20:58:18]set names utf8
+[2017-12-05 20:58:18]DESC cz_auth_group
+[2017-12-05 20:58:18]select * from cz_auth_group
+[2017-12-05 20:58:19]set names utf8
+[2017-12-05 20:58:19]DESC cz_user
+[2017-12-05 20:58:19]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 20:58:22]set names utf8
+[2017-12-05 20:58:22]DESC cz_user
+[2017-12-05 20:58:22]select * from `cz_user` where `user_id`=15
+[2017-12-05 20:58:22]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 20:58:22]set names utf8
+[2017-12-05 20:58:22]DESC cz_auth_group
+[2017-12-05 20:58:22]select * from cz_auth_group
+[2017-12-05 20:58:27]set names utf8
+[2017-12-05 20:58:27]DESC cz_user
+[2017-12-05 20:58:27]UPDATE `cz_user` SET `user_name`='user5',`password`='pass5',`email`='user5@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 20:58:27]set names utf8
+[2017-12-05 20:58:27]DESC cz_auth_group_id
+[2017-12-05 20:58:27]DELETE FROM `cz_auth_group_id` WHERE `id`=15
+[2017-12-05 20:58:27]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','1')
+[2017-12-05 20:58:29]set names utf8
+[2017-12-05 20:58:29]DESC cz_user
+[2017-12-05 20:58:29]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:12:41]set names utf8
+[2017-12-05 21:12:41]DESC cz_user
+[2017-12-05 21:12:41]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:13:08]set names utf8
+[2017-12-05 21:13:08]DESC cz_user
+[2017-12-05 21:13:08]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:14:53]set names utf8
+[2017-12-05 21:14:53]DESC cz_user
+[2017-12-05 21:14:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:14:53]set names utf8
+[2017-12-05 21:14:53]DESC cz_user
+[2017-12-05 21:14:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:14:53]set names utf8
+[2017-12-05 21:14:53]DESC cz_user
+[2017-12-05 21:14:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:14:55]set names utf8
+[2017-12-05 21:14:55]DESC cz_user
+[2017-12-05 21:14:55]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:14:55]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:14:55]set names utf8
+[2017-12-05 21:14:55]DESC cz_auth_group
+[2017-12-05 21:14:55]select * from cz_auth_group
+[2017-12-05 21:15:14]set names utf8
+[2017-12-05 21:15:14]DESC cz_user
+[2017-12-05 21:15:14]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:15:14]set names utf8
+[2017-12-05 21:15:14]DESC cz_auth_group_id
+[2017-12-05 21:15:14]DELETE FROM `cz_auth_group_id` WHERE  uid = 15 
+[2017-12-05 21:15:14]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','2')
+[2017-12-05 21:15:14]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','3')
+[2017-12-05 21:15:16]set names utf8
+[2017-12-05 21:15:16]DESC cz_user
+[2017-12-05 21:15:16]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:15:21]set names utf8
+[2017-12-05 21:15:21]DESC cz_user
+[2017-12-05 21:15:21]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:15:21]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:15:21]set names utf8
+[2017-12-05 21:15:21]DESC cz_auth_group
+[2017-12-05 21:15:21]select * from cz_auth_group
+[2017-12-05 21:15:26]set names utf8
+[2017-12-05 21:15:26]DESC cz_user
+[2017-12-05 21:15:26]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:15:29]set names utf8
+[2017-12-05 21:15:29]DESC cz_user
+[2017-12-05 21:15:29]select * from `cz_user` where `user_id`=0
+[2017-12-05 21:15:29]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 21:15:29]set names utf8
+[2017-12-05 21:15:29]DESC cz_auth_group
+[2017-12-05 21:15:29]select * from cz_auth_group
+[2017-12-05 21:16:52]set names utf8
+[2017-12-05 21:16:52]DESC cz_user
+[2017-12-05 21:16:52]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:16:52]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:16:52]set names utf8
+[2017-12-05 21:16:52]DESC cz_auth_group
+[2017-12-05 21:16:52]select * from cz_auth_group
+[2017-12-05 21:16:53]set names utf8
+[2017-12-05 21:16:53]DESC cz_user
+[2017-12-05 21:16:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:16:55]set names utf8
+[2017-12-05 21:16:55]DESC cz_user
+[2017-12-05 21:16:55]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:16:55]set names utf8
+[2017-12-05 21:16:55]DESC cz_user
+[2017-12-05 21:16:55]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:16:57]set names utf8
+[2017-12-05 21:16:57]DESC cz_user
+[2017-12-05 21:16:57]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:16:57]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:16:57]set names utf8
+[2017-12-05 21:16:57]DESC cz_auth_group
+[2017-12-05 21:16:57]select * from cz_auth_group
+[2017-12-05 21:17:01]set names utf8
+[2017-12-05 21:17:01]DESC cz_user
+[2017-12-05 21:17:01]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:17:04]set names utf8
+[2017-12-05 21:17:04]DESC cz_user
+[2017-12-05 21:17:04]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:17:04]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:17:04]set names utf8
+[2017-12-05 21:17:04]DESC cz_auth_group
+[2017-12-05 21:17:04]select * from cz_auth_group
+[2017-12-05 21:17:12]set names utf8
+[2017-12-05 21:17:12]DESC cz_user
+[2017-12-05 21:17:12]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 21:17:12]set names utf8
+[2017-12-05 21:17:12]DESC cz_auth_group_id
+[2017-12-05 21:17:12]DELETE FROM `cz_auth_group_id` WHERE  uid = 15 
+[2017-12-05 21:17:12]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','1')
+[2017-12-05 21:17:12]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','3')
+[2017-12-05 21:17:14]set names utf8
+[2017-12-05 21:17:14]DESC cz_user
+[2017-12-05 21:17:14]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:17:23]set names utf8
+[2017-12-05 21:17:23]DESC cz_user
+[2017-12-05 21:17:23]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:17:23]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:17:23]set names utf8
+[2017-12-05 21:17:23]DESC cz_auth_group
+[2017-12-05 21:17:23]select * from cz_auth_group
+[2017-12-05 21:17:28]set names utf8
+[2017-12-05 21:17:29]DESC cz_user
+[2017-12-05 21:17:29]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:17:29]set names utf8
+[2017-12-05 21:17:29]DESC cz_auth_group_id
+[2017-12-05 21:17:29]DELETE FROM `cz_auth_group_id` WHERE  uid = 15 
+[2017-12-05 21:17:29]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','1')
+[2017-12-05 21:17:29]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','2')
+[2017-12-05 21:17:31]set names utf8
+[2017-12-05 21:17:31]DESC cz_user
+[2017-12-05 21:17:31]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:17:35]set names utf8
+[2017-12-05 21:17:35]DESC cz_user
+[2017-12-05 21:17:35]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:17:35]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:17:35]set names utf8
+[2017-12-05 21:17:35]DESC cz_auth_group
+[2017-12-05 21:17:35]select * from cz_auth_group
+[2017-12-05 21:17:46]set names utf8
+[2017-12-05 21:17:46]DESC cz_user
+[2017-12-05 21:17:46]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:17:49]set names utf8
+[2017-12-05 21:17:49]DESC cz_user
+[2017-12-05 21:17:49]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:17:49]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:17:49]set names utf8
+[2017-12-05 21:17:49]DESC cz_auth_group
+[2017-12-05 21:17:49]select * from cz_auth_group
+[2017-12-05 21:19:39]set names utf8
+[2017-12-05 21:19:39]DESC cz_user
+[2017-12-05 21:19:39]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:19:39]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:19:39]set names utf8
+[2017-12-05 21:19:39]DESC cz_auth_group
+[2017-12-05 21:19:39]select * from cz_auth_group
+[2017-12-05 21:19:39]set names utf8
+[2017-12-05 21:19:39]DESC cz_user
+[2017-12-05 21:19:39]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:42]set names utf8
+[2017-12-05 21:19:42]DESC cz_user
+[2017-12-05 21:19:42]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:44]set names utf8
+[2017-12-05 21:19:44]DESC cz_user
+[2017-12-05 21:19:44]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:46]set names utf8
+[2017-12-05 21:19:46]DESC cz_user
+[2017-12-05 21:19:46]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:46]set names utf8
+[2017-12-05 21:19:46]DESC cz_user
+[2017-12-05 21:19:46]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:46]set names utf8
+[2017-12-05 21:19:46]DESC cz_user
+[2017-12-05 21:19:46]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:46]set names utf8
+[2017-12-05 21:19:46]DESC cz_user
+[2017-12-05 21:19:46]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:19:48]set names utf8
+[2017-12-05 21:19:48]DESC cz_user
+[2017-12-05 21:19:48]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:19:48]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:19:48]set names utf8
+[2017-12-05 21:19:48]DESC cz_auth_group
+[2017-12-05 21:19:48]select * from cz_auth_group
+[2017-12-05 21:19:53]set names utf8
+[2017-12-05 21:19:53]DESC cz_user
+[2017-12-05 21:19:53]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:19:57]set names utf8
+[2017-12-05 21:19:57]DESC cz_user
+[2017-12-05 21:19:57]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:19:57]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:19:57]set names utf8
+[2017-12-05 21:19:57]DESC cz_auth_group
+[2017-12-05 21:19:57]select * from cz_auth_group
+[2017-12-05 21:20:01]set names utf8
+[2017-12-05 21:20:01]DESC cz_user
+[2017-12-05 21:20:01]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 21:20:01]set names utf8
+[2017-12-05 21:20:01]DESC cz_auth_group_id
+[2017-12-05 21:20:01]DELETE FROM `cz_auth_group_id` WHERE  uid = 15 
+[2017-12-05 21:20:03]set names utf8
+[2017-12-05 21:20:03]DESC cz_user
+[2017-12-05 21:20:03]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:07]set names utf8
+[2017-12-05 21:20:07]DESC cz_user
+[2017-12-05 21:20:07]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:09]set names utf8
+[2017-12-05 21:20:09]DESC cz_user
+[2017-12-05 21:20:09]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:09]set names utf8
+[2017-12-05 21:20:09]DESC cz_user
+[2017-12-05 21:20:09]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:09]set names utf8
+[2017-12-05 21:20:09]DESC cz_user
+[2017-12-05 21:20:09]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:27]set names utf8
+[2017-12-05 21:20:27]DESC cz_user
+[2017-12-05 21:20:27]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:52]set names utf8
+[2017-12-05 21:20:52]DESC cz_user
+[2017-12-05 21:20:52]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:53]set names utf8
+[2017-12-05 21:20:53]DESC cz_user
+[2017-12-05 21:20:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:53]set names utf8
+[2017-12-05 21:20:53]DESC cz_user
+[2017-12-05 21:20:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:20:53]set names utf8
+[2017-12-05 21:20:53]DESC cz_user
+[2017-12-05 21:20:53]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:21:00]set names utf8
+[2017-12-05 21:21:00]DESC cz_user
+[2017-12-05 21:21:00]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:21:05]set names utf8
+[2017-12-05 21:21:05]DESC cz_user
+[2017-12-05 21:21:05]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:21:19]set names utf8
+[2017-12-05 21:21:19]DESC cz_user
+[2017-12-05 21:21:19]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:21:20]set names utf8
+[2017-12-05 21:21:20]DESC cz_user
+[2017-12-05 21:21:20]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:21:26]set names utf8
+[2017-12-05 21:21:26]DESC cz_user
+[2017-12-05 21:21:26]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:21:26]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:21:26]set names utf8
+[2017-12-05 21:21:26]DESC cz_auth_group
+[2017-12-05 21:21:26]select * from cz_auth_group
+[2017-12-05 21:21:31]set names utf8
+[2017-12-05 21:21:31]DESC cz_user
+[2017-12-05 21:21:31]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 21:21:34]set names utf8
+[2017-12-05 21:21:34]DESC cz_user
+[2017-12-05 21:21:34]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:21:34]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:21:34]set names utf8
+[2017-12-05 21:21:34]DESC cz_auth_group
+[2017-12-05 21:21:34]select * from cz_auth_group
+[2017-12-05 21:24:28]set names utf8
+[2017-12-05 21:24:28]DESC cz_user
+[2017-12-05 21:24:28]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:24:28]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:24:28]set names utf8
+[2017-12-05 21:24:28]DESC cz_auth_group
+[2017-12-05 21:24:28]select * from cz_auth_group
+[2017-12-05 21:39:30]set names utf8
+[2017-12-05 21:39:30]DESC cz_user
+[2017-12-05 21:39:30]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:39:31]set names utf8
+[2017-12-05 21:39:31]DESC cz_user
+[2017-12-05 21:39:31]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:39:32]set names utf8
+[2017-12-05 21:39:32]DESC cz_user
+[2017-12-05 21:39:32]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:39:36]set names utf8
+[2017-12-05 21:39:36]DESC cz_user
+[2017-12-05 21:39:36]select * from `cz_user` where `user_id`=15
+[2017-12-05 21:39:36]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 21:39:36]set names utf8
+[2017-12-05 21:39:36]DESC cz_auth_group
+[2017-12-05 21:39:36]select * from cz_auth_group
+[2017-12-05 21:39:43]set names utf8
+[2017-12-05 21:39:43]DESC cz_user
+[2017-12-05 21:39:43]UPDATE `cz_user` SET `user_name`='user6',`password`='pass6',`email`='user6@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 21:39:43]set names utf8
+[2017-12-05 21:39:43]DESC cz_auth_group_id
+[2017-12-05 21:39:43]DELETE FROM `cz_auth_group_id` WHERE  uid = 15 
+[2017-12-05 21:39:43]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','1')
+[2017-12-05 21:39:43]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','2')
+[2017-12-05 21:39:43]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('15','3')
+[2017-12-05 21:39:45]set names utf8
+[2017-12-05 21:39:45]DESC cz_user
+[2017-12-05 21:39:45]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:40:09]set names utf8
+[2017-12-05 21:40:09]DESC cz_user
+[2017-12-05 21:40:09]set names utf8
+[2017-12-05 21:40:09]DESC cz_auth_group_id
+[2017-12-05 21:40:09]DELETE FROM `cz_auth_group_id` WHERE  uid = 15 
+[2017-12-05 21:40:09]DELETE FROM `cz_user` WHERE `user_id`=15
+[2017-12-05 21:40:11]set names utf8
+[2017-12-05 21:40:11]DESC cz_user
+[2017-12-05 21:40:11]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:40:12]set names utf8
+[2017-12-05 21:40:12]DESC cz_user
+[2017-12-05 21:40:12]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:40:39]set names utf8
+[2017-12-05 21:40:39]DESC cz_auth_group
+[2017-12-05 21:40:39]select * from cz_auth_group
+[2017-12-05 21:41:17]set names utf8
+[2017-12-05 21:41:17]DESC cz_auth_group
+[2017-12-05 21:41:17]select * from cz_auth_group
+[2017-12-05 21:41:39]set names utf8
+[2017-12-05 21:41:39]DESC cz_user
+[2017-12-05 21:41:39]INSERT INTO `cz_user` (`user_name`,`password`,`email`,`status`) VALUES ('user3','pass3','user3@qq.com','1')
+[2017-12-05 21:41:39]set names utf8
+[2017-12-05 21:41:39]DESC cz_auth_group_id
+[2017-12-05 21:41:39]INSERT INTO `cz_auth_group_id` (`uid`,`groud_id`) VALUES ('16','1')
+[2017-12-05 21:41:42]set names utf8
+[2017-12-05 21:41:42]DESC cz_user
+[2017-12-05 21:41:42]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 21:43:29]set names utf8
+[2017-12-05 21:43:29]DESC cz_user
+[2017-12-05 21:43:29]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id ORDER BY a.user_id DESC 
+[2017-12-05 21:43:52]set names utf8
+[2017-12-05 21:43:52]DESC cz_auth_group
+[2017-12-05 21:43:52]select * from cz_auth_group
+[2017-12-05 21:43:54]set names utf8
+[2017-12-05 21:43:54]DESC cz_auth_rule
+[2017-12-05 21:43:54]select * from cz_auth_rule
+[2017-12-05 21:44:02]set names utf8
+[2017-12-05 21:44:02]DESC cz_auth_group
+[2017-12-05 21:44:02]select * from cz_auth_group
+[2017-12-05 21:44:06]set names utf8
+[2017-12-05 21:44:06]DESC cz_auth_group
+[2017-12-05 21:44:06]select * from cz_auth_group
+[2017-12-05 21:44:48]set names utf8
+[2017-12-05 21:44:48]DESC cz_admin_nav
+[2017-12-05 21:44:48]select * from cz_admin_nav
+[2017-12-05 21:44:53]set names utf8
+[2017-12-05 21:44:53]DESC cz_auth_group
+[2017-12-05 21:44:53]select * from cz_auth_group
+[2017-12-05 21:44:58]set names utf8
+[2017-12-05 21:44:58]DESC cz_auth_group
+[2017-12-05 21:44:58]select * from cz_auth_group
+[2017-12-05 21:45:05]set names utf8
+[2017-12-05 21:45:05]DESC cz_auth_group
+[2017-12-05 21:45:05]select * from `cz_auth_group` where `id`=1
+[2017-12-05 21:45:12]set names utf8
+[2017-12-05 21:45:12]DESC cz_auth_group
+[2017-12-05 21:45:12]UPDATE `cz_auth_group` SET `title`='全局管理员' WHERE `id`=1
+[2017-12-05 21:45:15]set names utf8
+[2017-12-05 21:45:15]DESC cz_auth_group
+[2017-12-05 21:45:15]select * from `cz_auth_group` where `id`=1
+[2017-12-05 21:45:19]set names utf8
+[2017-12-05 21:45:19]DESC cz_auth_group
+[2017-12-05 21:45:19]UPDATE `cz_auth_group` SET `title`='全局管理' WHERE `id`=1
+[2017-12-05 21:45:21]set names utf8
+[2017-12-05 21:45:21]DESC cz_auth_group
+[2017-12-05 21:45:21]select * from cz_auth_group
+[2017-12-05 21:45:30]set names utf8
+[2017-12-05 21:45:30]DESC cz_auth_group
+[2017-12-05 21:45:30]select * from `cz_auth_group` where `id`=1
+[2017-12-05 21:45:48]set names utf8
+[2017-12-05 21:45:48]DESC cz_auth_group
+[2017-12-05 21:45:48]UPDATE `cz_auth_group` SET `title`='全局管理员' WHERE `id`=1
+[2017-12-05 21:45:50]set names utf8
+[2017-12-05 21:45:50]DESC cz_auth_group
+[2017-12-05 21:45:50]select * from cz_auth_group
+[2017-12-05 21:45:59]set names utf8
+[2017-12-05 21:45:59]DESC cz_auth_group
+[2017-12-05 21:45:59]select * from cz_auth_group
+[2017-12-05 22:01:02]set names utf8
+[2017-12-05 22:01:02]DESC cz_auth_rule
+[2017-12-05 22:01:02]select * from cz_auth_rule
+[2017-12-05 22:01:30]set names utf8
+[2017-12-05 22:01:30]DESC cz_auth_rule
+[2017-12-05 22:01:30]select * from `cz_auth_rule` where `id`=7
+[2017-12-05 22:01:30]select * from cz_auth_rule
+[2017-12-05 22:01:34]set names utf8
+[2017-12-05 22:01:34]DESC cz_auth_rule
+[2017-12-05 22:01:34]select * from cz_auth_rule
+[2017-12-05 22:01:35]set names utf8
+[2017-12-05 22:01:35]DESC cz_auth_rule
+[2017-12-05 22:01:35]select * from cz_auth_rule
+[2017-12-05 22:01:58]set names utf8
+[2017-12-05 22:01:58]DESC cz_auth_rule
+[2017-12-05 22:01:58]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('7','添加管理员','Admin/User/insert','1')
+[2017-12-05 22:02:01]set names utf8
+[2017-12-05 22:02:01]DESC cz_auth_rule
+[2017-12-05 22:02:02]select * from cz_auth_rule
+[2017-12-05 22:02:21]set names utf8
+[2017-12-05 22:02:21]DESC cz_auth_rule
+[2017-12-05 22:02:22]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('7','修改管理员','Admin/User/update','1')
+[2017-12-05 22:02:25]set names utf8
+[2017-12-05 22:02:25]DESC cz_auth_rule
+[2017-12-05 22:02:25]select * from cz_auth_rule
+[2017-12-05 22:02:38]set names utf8
+[2017-12-05 22:02:38]DESC cz_auth_rule
+[2017-12-05 22:02:38]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('7','删除管理员','Admin/User/delete','1')
+[2017-12-05 22:02:42]set names utf8
+[2017-12-05 22:02:42]DESC cz_auth_rule
+[2017-12-05 22:02:42]select * from cz_auth_rule
+[2017-12-05 22:02:42]set names utf8
+[2017-12-05 22:02:42]DESC cz_auth_rule
+[2017-12-05 22:02:42]select * from cz_auth_rule
+[2017-12-05 22:02:53]set names utf8
+[2017-12-05 22:02:53]DESC cz_auth_group
+[2017-12-05 22:02:53]select * from cz_auth_group
+[2017-12-05 22:02:57]set names utf8
+[2017-12-05 22:02:57]DESC cz_auth_group
+[2017-12-05 22:02:57]select * from cz_auth_group
+[2017-12-05 22:02:58]set names utf8
+[2017-12-05 22:02:58]DESC cz_auth_group
+[2017-12-05 22:02:58]select * from cz_auth_group
+[2017-12-05 22:03:08]set names utf8
+[2017-12-05 22:03:08]DESC cz_auth_group
+[2017-12-05 22:08:01]set names utf8
+[2017-12-05 22:08:01]DESC cz_auth_rule
+[2017-12-05 22:08:01]SELECT * from cz_auth_rule 
+[2017-12-05 22:11:38]set names utf8
+[2017-12-05 22:11:38]DESC cz_auth_rule
+[2017-12-05 22:11:38]SELECT * from cz_auth_rule 
+[2017-12-05 22:12:06]set names utf8
+[2017-12-05 22:12:06]DESC cz_auth_rule
+[2017-12-05 22:12:06]SELECT * from cz_auth_rule 
+[2017-12-05 22:12:06]set names utf8
+[2017-12-05 22:12:07]DESC cz_auth_rule
+[2017-12-05 22:12:07]SELECT * from cz_auth_rule 
+[2017-12-05 22:12:07]set names utf8
+[2017-12-05 22:12:07]DESC cz_auth_rule
+[2017-12-05 22:12:07]SELECT * from cz_auth_rule 
+[2017-12-05 22:18:27]set names utf8
+[2017-12-05 22:18:27]DESC cz_auth_group
+[2017-12-05 22:18:27]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:18:27]set names utf8
+[2017-12-05 22:18:27]DESC cz_auth_rule
+[2017-12-05 22:18:27]SELECT * from cz_auth_rule 
+[2017-12-05 22:18:46]set names utf8
+[2017-12-05 22:18:46]DESC cz_auth_group
+[2017-12-05 22:18:46]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:18:46]set names utf8
+[2017-12-05 22:18:46]DESC cz_auth_rule
+[2017-12-05 22:18:46]SELECT * from cz_auth_rule 
+[2017-12-05 22:19:13]set names utf8
+[2017-12-05 22:19:13]DESC cz_auth_group
+[2017-12-05 22:19:13]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:19:13]set names utf8
+[2017-12-05 22:19:13]DESC cz_auth_rule
+[2017-12-05 22:19:13]SELECT * from cz_auth_rule 
+[2017-12-05 22:22:25]set names utf8
+[2017-12-05 22:22:25]DESC cz_auth_group
+[2017-12-05 22:22:25]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:22:25]set names utf8
+[2017-12-05 22:22:25]DESC cz_auth_rule
+[2017-12-05 22:22:25]SELECT * from cz_auth_rule 
+[2017-12-05 22:25:16]set names utf8
+[2017-12-05 22:25:16]DESC cz_auth_group
+[2017-12-05 22:25:16]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:25:16]set names utf8
+[2017-12-05 22:25:16]DESC cz_auth_rule
+[2017-12-05 22:25:16]SELECT * from cz_auth_rule 
+[2017-12-05 22:25:35]set names utf8
+[2017-12-05 22:25:35]DESC cz_auth_group
+[2017-12-05 22:25:35]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:25:35]set names utf8
+[2017-12-05 22:25:35]DESC cz_auth_rule
+[2017-12-05 22:25:35]SELECT * from cz_auth_rule 
+[2017-12-05 22:25:56]set names utf8
+[2017-12-05 22:25:56]DESC cz_auth_group
+[2017-12-05 22:25:56]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:25:56]set names utf8
+[2017-12-05 22:25:56]DESC cz_auth_rule
+[2017-12-05 22:25:56]SELECT * from cz_auth_rule 
+[2017-12-05 22:27:07]set names utf8
+[2017-12-05 22:27:07]DESC cz_auth_group
+[2017-12-05 22:27:07]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:27:07]set names utf8
+[2017-12-05 22:27:07]DESC cz_auth_rule
+[2017-12-05 22:27:07]SELECT * from cz_auth_rule 
+[2017-12-05 22:27:50]set names utf8
+[2017-12-05 22:27:50]DESC cz_auth_group
+[2017-12-05 22:27:50]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:27:50]set names utf8
+[2017-12-05 22:27:50]DESC cz_auth_rule
+[2017-12-05 22:27:50]SELECT * from cz_auth_rule 
+[2017-12-05 22:28:06]set names utf8
+[2017-12-05 22:28:06]DESC cz_auth_group
+[2017-12-05 22:28:06]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:28:06]set names utf8
+[2017-12-05 22:28:06]DESC cz_auth_rule
+[2017-12-05 22:28:06]SELECT * from cz_auth_rule 
+[2017-12-05 22:30:09]set names utf8
+[2017-12-05 22:30:09]DESC cz_auth_group
+[2017-12-05 22:30:09]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:30:09]set names utf8
+[2017-12-05 22:30:09]DESC cz_auth_rule
+[2017-12-05 22:30:09]SELECT * from cz_auth_rule 
+[2017-12-05 22:32:54]set names utf8
+[2017-12-05 22:32:54]DESC cz_auth_group
+[2017-12-05 22:32:54]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:32:54]set names utf8
+[2017-12-05 22:32:54]DESC cz_auth_rule
+[2017-12-05 22:32:54]SELECT * from cz_auth_rule 
+[2017-12-05 22:32:54]set names utf8
+[2017-12-05 22:32:55]DESC cz_auth_group
+[2017-12-05 22:32:55]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:32:55]set names utf8
+[2017-12-05 22:32:55]DESC cz_auth_rule
+[2017-12-05 22:32:55]SELECT * from cz_auth_rule 
+[2017-12-05 22:32:55]set names utf8
+[2017-12-05 22:32:55]DESC cz_auth_group
+[2017-12-05 22:32:55]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:32:55]set names utf8
+[2017-12-05 22:32:55]DESC cz_auth_rule
+[2017-12-05 22:32:55]SELECT * from cz_auth_rule 
+[2017-12-05 22:32:55]set names utf8
+[2017-12-05 22:32:55]DESC cz_auth_group
+[2017-12-05 22:32:55]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:32:55]set names utf8
+[2017-12-05 22:32:55]DESC cz_auth_rule
+[2017-12-05 22:32:55]SELECT * from cz_auth_rule 
+[2017-12-05 22:38:43]set names utf8
+[2017-12-05 22:38:43]DESC cz_auth_group
+[2017-12-05 22:38:43]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:38:43]set names utf8
+[2017-12-05 22:38:43]DESC cz_auth_rule
+[2017-12-05 22:38:43]SELECT * from cz_auth_rule 
+[2017-12-05 22:39:21]set names utf8
+[2017-12-05 22:39:21]DESC cz_auth_group
+[2017-12-05 22:39:21]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:39:21]set names utf8
+[2017-12-05 22:39:21]DESC cz_auth_rule
+[2017-12-05 22:39:21]SELECT * from cz_auth_rule 
+[2017-12-05 22:46:37]set names utf8
+[2017-12-05 22:46:37]DESC cz_auth_group
+[2017-12-05 22:46:37]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:46:37]set names utf8
+[2017-12-05 22:46:37]DESC cz_auth_rule
+[2017-12-05 22:46:37]SELECT * from cz_auth_rule 
+[2017-12-05 22:46:39]set names utf8
+[2017-12-05 22:46:39]DESC cz_auth_group
+[2017-12-05 22:46:39]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:46:39]set names utf8
+[2017-12-05 22:46:39]DESC cz_auth_rule
+[2017-12-05 22:46:39]SELECT * from cz_auth_rule 
+[2017-12-05 22:46:39]set names utf8
+[2017-12-05 22:46:39]DESC cz_auth_group
+[2017-12-05 22:46:39]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:46:39]set names utf8
+[2017-12-05 22:46:39]DESC cz_auth_rule
+[2017-12-05 22:46:39]SELECT * from cz_auth_rule 
+[2017-12-05 22:46:40]set names utf8
+[2017-12-05 22:46:40]DESC cz_auth_group
+[2017-12-05 22:46:40]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:46:40]set names utf8
+[2017-12-05 22:46:40]DESC cz_auth_rule
+[2017-12-05 22:46:40]SELECT * from cz_auth_rule 
+[2017-12-05 22:46:40]set names utf8
+[2017-12-05 22:46:40]DESC cz_auth_group
+[2017-12-05 22:46:40]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:46:40]set names utf8
+[2017-12-05 22:46:40]DESC cz_auth_rule
+[2017-12-05 22:46:40]SELECT * from cz_auth_rule 
+[2017-12-05 22:46:50]set names utf8
+[2017-12-05 22:46:50]DESC cz_auth_group
+[2017-12-05 22:46:50]UPDATE `cz_auth_group` SET  WHERE 0
+[2017-12-05 22:50:59]set names utf8
+[2017-12-05 22:50:59]DESC cz_auth_group
+[2017-12-05 22:50:59]select * from `cz_auth_group` where `id`=1
+[2017-12-05 22:50:59]set names utf8
+[2017-12-05 22:50:59]DESC cz_auth_rule
+[2017-12-05 22:50:59]SELECT * from cz_auth_rule 
+[2017-12-05 22:51:09]set names utf8
+[2017-12-05 22:51:09]DESC cz_auth_group
+[2017-12-05 22:51:09]UPDATE `cz_auth_group` SET `rules`='4,5,8,9,10,6,7,11,12,13' WHERE `id`=1
+[2017-12-05 22:51:12]set names utf8
+[2017-12-05 22:51:12]DESC cz_auth_group
+[2017-12-05 22:51:12]select * from cz_auth_group

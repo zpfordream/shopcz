@@ -48,4 +48,26 @@ class AccessModel extends Model{
         return $list;
     }
 
+
+    //，找到子节点，就继续找，并将其保存到 下标为child的元素中，将二维护组转化成多维数组
+    public function childList($arr,$pid=0){
+        $list = array();
+        foreach($arr as $v){
+            if($v['pid'] == $pid){
+                //说明找到子节点了，将该节点作为当前节点找其后代节点
+                $child = $this->childList($arr , $v['id']);
+                //将子节点这个数组，变成原数组的多一维数组
+                $v['child'] = $child;
+                $list[] = $v;
+            }
+        }
+        return $list;
+    }
+
+    //用在权限列表，用户组页面点击分配权限，获取所有的权限数据，并构造成多维数组
+    public function frontAccess(){
+        $sql = "SELECT * from {$this->table} ";
+        $accesses = $this->db->getAll($sql);
+        return $this->childList($accesses);
+    }
 }

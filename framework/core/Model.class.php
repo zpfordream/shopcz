@@ -149,6 +149,34 @@ class Model{
 	}
 
 	/**
+	 * 自动删除,用于不是传入主键的删除，传入删除条件字段和值，用于关联表的删除
+	 * @access public
+	 * @param $key string 数据库中的字段名
+	 * @param $value mixed 要删除的字段值
+	 * @return mixed 成功返回删除的记录数，失败则返回false
+	 */
+	public function deleteNotById($key ,$value){
+
+		//构造sql语句
+		$sql = "DELETE FROM `{$this->table}` WHERE  {$key} = {$value} ";
+
+		if ($this->db->query($sql)) {
+			# 成功，并判断受影响的记录数
+			if ($rows = mysql_affected_rows()) {
+				# 有受影响的记录
+				return $rows;
+			} else {
+				# 没有受影响的记录
+				return false;
+			}
+		} else {
+			# 失败返回false
+			return false;
+		}
+	}
+
+
+	/**
 	 * 通过主键获取信息
 	 * @param $pk int 主键值
 	 * @return array 单条记录

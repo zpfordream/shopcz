@@ -15,8 +15,8 @@ class UserModel extends Model{
 //        return $users;
         //user表和cz_auth_group, 靠中间表cz_auth_group_id关联起来，用两次join，连表查询
 
-        $sql = "select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from {$this->table} AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
-              join cz_auth_group AS c ON  b.groud_id = c.id";
+        $sql = "select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from {$this->table} AS a LEFT JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+             LEFT join cz_auth_group AS c ON  b.groud_id = c.id ORDER BY a.user_id DESC ";
         $users = $this->db->getAll($sql);
 
 //        var_dump($users);

@@ -9,7 +9,7 @@ class AdminModel extends Model{
 
     //数据库连接测试，会在index控制器调用  进行测试
     public function  test(){
-        $sql = "select * from {$this->table}";
+        $sql = "select * from {$this->table} ORDER by";
         return $this->db->getAll($sql);
     }
 

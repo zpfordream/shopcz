@@ -89,7 +89,7 @@ class GroupController extends Controller{
 
     //删除商品分类
     public function deleteAction(){
-        //1. 获取cat_id，作为条件
+        //1. 获取group_id，作为条件
         $id = $_GET['id'] + 0;
         //2. 做一些相应的判断
         //如果不是叶子分类，则不允许删除
@@ -102,4 +102,45 @@ class GroupController extends Controller{
             $this->jump('index.php?p=admin&c=group&a=index',"删除用户组失败",3);
         }
     }
+
+
+    //载入给用户组分配权限，只负责展示，提交动作，http://127.0.0.1/shopcz/index.php?p=admin&c=group&a=configAuth
+    public function configAuthAction(){
+
+        //1. 获取group_id，作为条件
+        $id = $_GET['id'] + 0;
+
+        //实例化用户组表，查看用户组
+        $groupModel = new GroupModel('auth_group');
+        $group = $groupModel->selectByPk($id);
+
+        //实例化权限表，获取所有权限，并且按照三维数组展现出来
+        $accessModel = new AccessModel('auth_rule');
+        $accesses    = $accessModel->frontAccess();
+//        var_dump($accesses);
+//        exit();
+
+        //3.载入编辑表单
+        include  CUR_VIEW_PATH."config_auth_edit.html";
+    }
+
+    //载入给用户组分配权限，只负责写入表中，提交动作，http://127.0.0.1/shopcz/index.php?p=admin&c=group&a=updateconfigAuth
+    public function updateconfigAuthAction(){
+
+//      1. 取到用户组的id，和 权限数组拼成的一个字段
+        $data['rules']    =    implode(',',$_POST['acces']);
+        $data['id']    =       $_POST['id'];
+        var_dump($data);
+
+        //2.实例化取值，然后存入表中
+        $groupModel  = new GroupModel('auth_group');
+        if($groupModel->update($data)){
+            $this->jump('index.php?p=admin&c=group&a=index',"给用户组分配权限成功",3);
+        }else{
+            $this->jump('index.php?p=admin&c=group&a=configAuth',"给用户组分配权限失败",3);
+        }
+
+    }
+
+
 }

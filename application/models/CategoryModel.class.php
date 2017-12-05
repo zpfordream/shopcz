@@ -65,7 +65,7 @@ class CategoryModel extends Model{
         return $list;
     }
 
-    //前台，获取所有的分类数据，并狗仔城多维数组
+    //前台，获取所有的分类数据，并构造成多维数组
     public function frontCats(){
         $sql = "SELECT * from {$this->table} ";
         $cats = $this->db->getAll($sql);
