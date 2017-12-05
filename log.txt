@@ -517,3 +517,868 @@
 [2017-12-05 08:46:54]set names utf8
 [2017-12-05 08:46:54]DESC cz_auth_rule
 [2017-12-05 08:46:54]select * from cz_auth_rule
+[2017-12-05 12:37:01]set names utf8
+[2017-12-05 12:37:01]DESC cz_category
+[2017-12-05 12:37:01]SELECT * from cz_category 
+[2017-12-05 12:37:01]set names utf8
+[2017-12-05 12:37:01]DESC cz_goods
+[2017-12-05 12:37:01]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-12-05 12:37:34]set names utf8
+[2017-12-05 12:37:34]DESC cz_user
+[2017-12-05 12:37:34]select * from cz_user where user_name= 'user' and password = 'pass' limit 1
+[2017-12-05 12:37:37]set names utf8
+[2017-12-05 12:37:37]DESC cz_admin_nav
+[2017-12-05 12:37:37]select * from cz_admin_nav
+[2017-12-05 12:37:56]set names utf8
+[2017-12-05 12:37:56]DESC cz_auth_rule
+[2017-12-05 12:37:56]select * from cz_auth_rule
+[2017-12-05 12:38:05]set names utf8
+[2017-12-05 12:38:05]DESC cz_admin_nav
+[2017-12-05 12:38:05]select * from cz_admin_nav
+[2017-12-05 12:38:44]set names utf8
+[2017-12-05 12:38:44]DESC cz_auth_rule
+[2017-12-05 12:38:44]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('0','后台首页','admin/index/index','1')
+[2017-12-05 12:38:47]set names utf8
+[2017-12-05 12:38:47]DESC cz_auth_rule
+[2017-12-05 12:38:47]select * from cz_auth_rule
+[2017-12-05 12:39:28]set names utf8
+[2017-12-05 12:39:28]DESC cz_auth_rule
+[2017-12-05 12:39:28]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('0','配置管理','admin/nav','1')
+[2017-12-05 12:39:31]set names utf8
+[2017-12-05 12:39:31]DESC cz_auth_rule
+[2017-12-05 12:39:31]select * from cz_auth_rule
+[2017-12-05 12:39:51]set names utf8
+[2017-12-05 12:39:51]DESC cz_auth_rule
+[2017-12-05 12:39:51]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('2','导航列表','admin/nav/index','1')
+[2017-12-05 12:39:54]set names utf8
+[2017-12-05 12:39:54]DESC cz_auth_rule
+[2017-12-05 12:39:54]select * from cz_auth_rule
+[2017-12-05 12:40:11]set names utf8
+[2017-12-05 12:40:11]DESC cz_auth_rule
+[2017-12-05 12:40:11]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('0','权限控制','Admin/ShowNav/','1')
+[2017-12-05 12:40:14]set names utf8
+[2017-12-05 12:40:14]DESC cz_auth_rule
+[2017-12-05 12:40:14]select * from cz_auth_rule
+[2017-12-05 12:40:27]set names utf8
+[2017-12-05 12:40:27]DESC cz_auth_rule
+[2017-12-05 12:40:27]select * from cz_auth_rule
+[2017-12-05 12:40:43]set names utf8
+[2017-12-05 12:40:43]DESC cz_auth_rule
+[2017-12-05 12:40:43]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('4','权限管理','Admin/Rule/index','1')
+[2017-12-05 12:40:46]set names utf8
+[2017-12-05 12:40:46]DESC cz_auth_rule
+[2017-12-05 12:40:46]select * from cz_auth_rule
+[2017-12-05 12:40:58]set names utf8
+[2017-12-05 12:40:58]DESC cz_auth_rule
+[2017-12-05 12:40:58]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('4','用户组管理','Admin/Group/index','1')
+[2017-12-05 12:41:01]set names utf8
+[2017-12-05 12:41:01]DESC cz_auth_rule
+[2017-12-05 12:41:01]select * from cz_auth_rule
+[2017-12-05 12:41:15]set names utf8
+[2017-12-05 12:41:15]DESC cz_auth_rule
+[2017-12-05 12:41:15]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('4','管理员列表','Admin/User/index','1')
+[2017-12-05 12:41:18]set names utf8
+[2017-12-05 12:41:18]DESC cz_auth_rule
+[2017-12-05 12:41:18]select * from cz_auth_rule
+[2017-12-05 12:42:24]set names utf8
+[2017-12-05 12:42:24]DESC cz_auth_rule
+[2017-12-05 12:42:24]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('5','添加权限','Admin/Rule/insert','1')
+[2017-12-05 12:42:27]set names utf8
+[2017-12-05 12:42:27]DESC cz_auth_rule
+[2017-12-05 12:42:27]select * from cz_auth_rule
+[2017-12-05 12:42:54]set names utf8
+[2017-12-05 12:42:54]DESC cz_auth_rule
+[2017-12-05 12:42:54]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('5','修改权限','Admin/Rule/edit','1')
+[2017-12-05 12:42:57]set names utf8
+[2017-12-05 12:42:57]DESC cz_auth_rule
+[2017-12-05 12:42:57]select * from cz_auth_rule
+[2017-12-05 12:43:21]set names utf8
+[2017-12-05 12:43:21]DESC cz_auth_rule
+[2017-12-05 12:43:21]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('5','删除权限','Admin/Rule/delete','1')
+[2017-12-05 12:43:24]set names utf8
+[2017-12-05 12:43:24]DESC cz_auth_rule
+[2017-12-05 12:43:24]select * from cz_auth_rule
+[2017-12-05 12:44:17]set names utf8
+[2017-12-05 12:44:17]DESC cz_admin_nav
+[2017-12-05 12:44:17]select * from `cz_admin_nav` where `id`=8
+[2017-12-05 12:44:17]select * from cz_admin_nav
+[2017-12-05 12:44:25]set names utf8
+[2017-12-05 12:44:25]DESC cz_admin_nav
+[2017-12-05 12:44:25]select * from cz_admin_nav
+[2017-12-05 12:44:25]UPDATE `cz_admin_nav` SET `name`='权限管理',`pid`='7',`mvc`='Admin/Access/index' WHERE `id`=8
+[2017-12-05 12:44:27]set names utf8
+[2017-12-05 12:44:27]DESC cz_admin_nav
+[2017-12-05 12:44:27]select * from cz_admin_nav
+[2017-12-05 12:44:28]set names utf8
+[2017-12-05 12:44:28]DESC cz_admin_nav
+[2017-12-05 12:44:28]select * from cz_admin_nav
+[2017-12-05 12:44:28]set names utf8
+[2017-12-05 12:44:28]DESC cz_admin_nav
+[2017-12-05 12:44:28]select * from cz_admin_nav
+[2017-12-05 12:46:00]set names utf8
+[2017-12-05 12:46:00]DESC cz_auth_rule
+[2017-12-05 12:46:00]select * from cz_auth_rule
+[2017-12-05 12:46:15]set names utf8
+[2017-12-05 12:46:15]DESC cz_auth_rule
+[2017-12-05 12:46:15]select * from cz_auth_rule
+[2017-12-05 12:46:16]set names utf8
+[2017-12-05 12:46:16]DESC cz_auth_rule
+[2017-12-05 12:46:16]select * from cz_auth_rule
+[2017-12-05 12:46:16]set names utf8
+[2017-12-05 12:46:16]DESC cz_auth_rule
+[2017-12-05 12:46:16]select * from cz_auth_rule
+[2017-12-05 12:46:16]set names utf8
+[2017-12-05 12:46:16]DESC cz_auth_rule
+[2017-12-05 12:46:16]select * from cz_auth_rule
+[2017-12-05 12:47:15]set names utf8
+[2017-12-05 12:47:15]DESC cz_auth_rule
+[2017-12-05 12:47:15]select * from cz_auth_rule
+[2017-12-05 12:47:15]set names utf8
+[2017-12-05 12:47:15]DESC cz_auth_rule
+[2017-12-05 12:47:15]select * from cz_auth_rule
+[2017-12-05 12:49:58]set names utf8
+[2017-12-05 12:49:58]DESC cz_auth_rule
+[2017-12-05 12:49:58]select * from cz_auth_rule
+[2017-12-05 12:56:49]set names utf8
+[2017-12-05 12:56:49]DESC cz_admin_nav
+[2017-12-05 12:56:49]select * from cz_admin_nav
+[2017-12-05 12:56:52]set names utf8
+[2017-12-05 12:56:52]DESC cz_auth_rule
+[2017-12-05 12:56:52]select * from cz_auth_rule
+[2017-12-05 12:57:22]set names utf8
+[2017-12-05 12:57:22]DESC cz_admin_nav
+[2017-12-05 12:57:22]select * from cz_admin_nav
+[2017-12-05 12:57:23]set names utf8
+[2017-12-05 12:57:23]DESC cz_auth_rule
+[2017-12-05 12:57:23]select * from cz_auth_rule
+[2017-12-05 12:57:44]set names utf8
+[2017-12-05 12:57:44]DESC cz_admin_nav
+[2017-12-05 12:57:44]select * from cz_admin_nav
+[2017-12-05 12:57:46]set names utf8
+[2017-12-05 12:57:46]DESC cz_auth_rule
+[2017-12-05 12:57:46]select * from cz_auth_rule
+[2017-12-05 12:58:15]set names utf8
+[2017-12-05 12:58:15]DESC cz_admin_nav
+[2017-12-05 12:58:15]select * from cz_admin_nav
+[2017-12-05 12:58:17]set names utf8
+[2017-12-05 12:58:17]DESC cz_auth_rule
+[2017-12-05 12:58:17]select * from cz_auth_rule
+[2017-12-05 13:06:45]set names utf8
+[2017-12-05 13:06:45]DESC cz_auth_rule
+[2017-12-05 13:06:45]select * from cz_auth_rule
+[2017-12-05 13:06:47]set names utf8
+[2017-12-05 13:06:47]DESC cz_auth_rule
+[2017-12-05 13:06:47]select * from cz_auth_rule
+[2017-12-05 13:06:56]set names utf8
+[2017-12-05 13:06:56]DESC cz_auth_rule
+[2017-12-05 13:06:56]select * from cz_auth_rule
+[2017-12-05 13:06:59]set names utf8
+[2017-12-05 13:06:59]DESC cz_auth_rule
+[2017-12-05 13:06:59]select * from `cz_auth_rule` where `id`=0
+[2017-12-05 13:06:59]select * from cz_auth_rule
+[2017-12-05 13:07:26]set names utf8
+[2017-12-05 13:07:26]DESC cz_auth_rule
+[2017-12-05 13:07:26]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:07:26]select * from cz_auth_rule
+[2017-12-05 13:08:01]set names utf8
+[2017-12-05 13:08:01]DESC cz_auth_rule
+[2017-12-05 13:08:01]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:08:01]select * from cz_auth_rule
+[2017-12-05 13:11:24]set names utf8
+[2017-12-05 13:11:24]DESC cz_auth_rule
+[2017-12-05 13:11:24]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:11:24]select * from cz_auth_rule
+[2017-12-05 13:11:47]set names utf8
+[2017-12-05 13:11:47]DESC cz_auth_rule
+[2017-12-05 13:11:47]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:11:47]select * from cz_auth_rule
+[2017-12-05 13:12:00]set names utf8
+[2017-12-05 13:12:00]DESC cz_auth_rule
+[2017-12-05 13:12:00]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:12:00]select * from cz_auth_rule
+[2017-12-05 13:12:27]set names utf8
+[2017-12-05 13:12:27]DESC cz_auth_rule
+[2017-12-05 13:12:27]select * from cz_auth_rule
+[2017-12-05 13:12:29]set names utf8
+[2017-12-05 13:12:29]DESC cz_auth_rule
+[2017-12-05 13:12:29]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:12:29]select * from cz_auth_rule
+[2017-12-05 13:12:31]set names utf8
+[2017-12-05 13:12:31]DESC cz_auth_rule
+[2017-12-05 13:12:31]select * from cz_auth_rule
+[2017-12-05 13:12:32]set names utf8
+[2017-12-05 13:12:32]DESC cz_auth_rule
+[2017-12-05 13:12:32]select * from `cz_auth_rule` where `id`=2
+[2017-12-05 13:12:32]select * from cz_auth_rule
+[2017-12-05 13:12:41]set names utf8
+[2017-12-05 13:12:41]DESC cz_auth_rule
+[2017-12-05 13:12:41]select * from cz_auth_rule
+[2017-12-05 13:12:44]set names utf8
+[2017-12-05 13:12:44]DESC cz_auth_rule
+[2017-12-05 13:12:44]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:12:44]select * from cz_auth_rule
+[2017-12-05 13:12:52]set names utf8
+[2017-12-05 13:12:52]DESC cz_auth_rule
+[2017-12-05 13:12:52]select * from cz_auth_rule
+[2017-12-05 13:12:53]set names utf8
+[2017-12-05 13:12:53]DESC cz_auth_rule
+[2017-12-05 13:12:53]select * from cz_auth_rule
+[2017-12-05 13:12:53]set names utf8
+[2017-12-05 13:12:53]DESC cz_auth_rule
+[2017-12-05 13:12:53]select * from cz_auth_rule
+[2017-12-05 13:12:55]set names utf8
+[2017-12-05 13:12:55]DESC cz_auth_rule
+[2017-12-05 13:12:55]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:12:55]select * from cz_auth_rule
+[2017-12-05 13:13:21]set names utf8
+[2017-12-05 13:13:21]DESC cz_auth_rule
+[2017-12-05 13:13:21]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:13:21]select * from cz_auth_rule
+[2017-12-05 13:14:27]set names utf8
+[2017-12-05 13:14:27]DESC cz_auth_rule
+[2017-12-05 13:14:27]select * from cz_auth_rule
+[2017-12-05 13:14:29]set names utf8
+[2017-12-05 13:14:29]DESC cz_auth_rule
+[2017-12-05 13:14:29]select * from cz_auth_rule
+[2017-12-05 13:14:30]set names utf8
+[2017-12-05 13:14:30]DESC cz_auth_rule
+[2017-12-05 13:14:30]select * from cz_auth_rule
+[2017-12-05 13:14:30]set names utf8
+[2017-12-05 13:14:30]DESC cz_auth_rule
+[2017-12-05 13:14:30]select * from cz_auth_rule
+[2017-12-05 13:14:30]set names utf8
+[2017-12-05 13:14:30]DESC cz_auth_rule
+[2017-12-05 13:14:30]select * from cz_auth_rule
+[2017-12-05 13:14:31]set names utf8
+[2017-12-05 13:14:31]DESC cz_auth_rule
+[2017-12-05 13:14:31]select * from cz_auth_rule
+[2017-12-05 13:14:31]set names utf8
+[2017-12-05 13:14:31]DESC cz_auth_rule
+[2017-12-05 13:14:31]select * from cz_auth_rule
+[2017-12-05 13:14:31]set names utf8
+[2017-12-05 13:14:31]DESC cz_auth_rule
+[2017-12-05 13:14:31]select * from cz_auth_rule
+[2017-12-05 13:14:31]set names utf8
+[2017-12-05 13:14:31]DESC cz_auth_rule
+[2017-12-05 13:14:31]select * from cz_auth_rule
+[2017-12-05 13:14:37]set names utf8
+[2017-12-05 13:14:37]DESC cz_auth_rule
+[2017-12-05 13:14:37]select * from cz_auth_rule
+[2017-12-05 13:14:39]set names utf8
+[2017-12-05 13:14:39]DESC cz_auth_rule
+[2017-12-05 13:14:39]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:14:39]select * from cz_auth_rule
+[2017-12-05 13:14:43]set names utf8
+[2017-12-05 13:14:43]DESC cz_category
+[2017-12-05 13:14:43]select * from cz_category
+[2017-12-05 13:14:48]set names utf8
+[2017-12-05 13:14:48]DESC cz_auth_rule
+[2017-12-05 13:14:48]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:14:48]select * from cz_auth_rule
+[2017-12-05 13:15:53]set names utf8
+[2017-12-05 13:15:53]DESC cz_auth_rule
+[2017-12-05 13:15:53]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:15:53]select * from cz_auth_rule
+[2017-12-05 13:21:09]set names utf8
+[2017-12-05 13:21:09]DESC cz_auth_rule
+[2017-12-05 13:21:09]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:21:09]select * from cz_auth_rule
+[2017-12-05 13:21:11]set names utf8
+[2017-12-05 13:21:11]DESC cz_auth_rule
+[2017-12-05 13:21:11]select * from cz_auth_rule
+[2017-12-05 13:22:34]set names utf8
+[2017-12-05 13:22:34]DESC cz_auth_rule
+[2017-12-05 13:22:34]select * from cz_auth_rule
+[2017-12-05 13:22:35]set names utf8
+[2017-12-05 13:22:35]DESC cz_auth_group
+[2017-12-05 13:22:35]select * from cz_auth_group
+[2017-12-05 13:22:35]set names utf8
+[2017-12-05 13:22:35]DESC cz_user
+[2017-12-05 13:22:35]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:22:40]set names utf8
+[2017-12-05 13:22:40]DESC cz_user
+[2017-12-05 13:22:40]select * from `cz_user` where `user_id`=13
+[2017-12-05 13:22:40]select groud_id from cz_auth_group_id WHERE uid = 13
+[2017-12-05 13:22:40]set names utf8
+[2017-12-05 13:22:40]DESC cz_auth_group
+[2017-12-05 13:22:40]select * from cz_auth_group
+[2017-12-05 13:22:43]set names utf8
+[2017-12-05 13:22:43]DESC cz_user
+[2017-12-05 13:22:43]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:22:46]set names utf8
+[2017-12-05 13:22:46]DESC cz_user
+[2017-12-05 13:22:46]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:22:46]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:22:46]set names utf8
+[2017-12-05 13:22:46]DESC cz_auth_group
+[2017-12-05 13:22:46]select * from cz_auth_group
+[2017-12-05 13:24:17]set names utf8
+[2017-12-05 13:24:17]DESC cz_auth_rule
+[2017-12-05 13:24:17]select * from `cz_auth_rule` where `id`=3
+[2017-12-05 13:24:17]select * from cz_auth_rule
+[2017-12-05 13:24:23]set names utf8
+[2017-12-05 13:24:23]DESC cz_auth_rule
+[2017-12-05 13:24:23]select * from cz_auth_rule
+[2017-12-05 13:24:30]set names utf8
+[2017-12-05 13:24:30]DESC cz_auth_rule
+[2017-12-05 13:24:30]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:24:30]select * from cz_auth_rule
+[2017-12-05 13:24:36]set names utf8
+[2017-12-05 13:24:36]DESC cz_auth_rule
+[2017-12-05 13:24:36]select * from cz_auth_rule
+[2017-12-05 13:24:39]set names utf8
+[2017-12-05 13:24:39]DESC cz_auth_rule
+[2017-12-05 13:24:39]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:24:39]select * from cz_auth_rule
+[2017-12-05 13:24:47]set names utf8
+[2017-12-05 13:24:47]DESC cz_auth_rule
+[2017-12-05 13:24:47]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:24:47]select * from cz_auth_rule
+[2017-12-05 13:24:48]set names utf8
+[2017-12-05 13:24:48]DESC cz_auth_rule
+[2017-12-05 13:24:48]select * from cz_auth_rule
+[2017-12-05 13:24:50]set names utf8
+[2017-12-05 13:24:50]DESC cz_auth_rule
+[2017-12-05 13:24:50]select * from `cz_auth_rule` where `id`=1
+[2017-12-05 13:24:50]select * from cz_auth_rule
+[2017-12-05 13:24:55]set names utf8
+[2017-12-05 13:24:55]DESC cz_auth_rule
+[2017-12-05 13:24:55]select * from cz_auth_rule
+[2017-12-05 13:24:55]UPDATE `cz_auth_rule` SET `title`='后台首页',`pid`='0',`url`='admin/index/inde',`status`='1' WHERE `id`=1
+[2017-12-05 13:24:57]set names utf8
+[2017-12-05 13:24:57]DESC cz_auth_rule
+[2017-12-05 13:24:57]select * from cz_auth_rule
+[2017-12-05 13:30:39]set names utf8
+[2017-12-05 13:30:39]DESC cz_auth_rule
+[2017-12-05 13:30:39]select * from cz_auth_rule
+[2017-12-05 13:30:45]set names utf8
+[2017-12-05 13:30:45]DESC cz_auth_rule
+[2017-12-05 13:30:45]select * from cz_auth_rule
+[2017-12-05 13:30:49]set names utf8
+[2017-12-05 13:30:49]DESC cz_auth_rule
+[2017-12-05 13:30:49]select * from cz_auth_rule
+[2017-12-05 13:30:49]DELETE FROM `cz_auth_rule` WHERE `id`=3
+[2017-12-05 13:30:52]set names utf8
+[2017-12-05 13:30:52]DESC cz_auth_rule
+[2017-12-05 13:30:52]select * from cz_auth_rule
+[2017-12-05 13:31:05]set names utf8
+[2017-12-05 13:31:05]DESC cz_auth_rule
+[2017-12-05 13:31:05]select * from cz_auth_rule
+[2017-12-05 13:31:20]set names utf8
+[2017-12-05 13:31:20]DESC cz_auth_rule
+[2017-12-05 13:31:20]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:31:20]select * from cz_auth_rule
+[2017-12-05 13:31:23]set names utf8
+[2017-12-05 13:31:23]DESC cz_auth_rule
+[2017-12-05 13:31:23]select * from cz_auth_rule
+[2017-12-05 13:31:26]set names utf8
+[2017-12-05 13:31:26]DESC cz_auth_rule
+[2017-12-05 13:31:26]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:31:26]select * from cz_auth_rule
+[2017-12-05 13:31:57]set names utf8
+[2017-12-05 13:31:57]DESC cz_auth_rule
+[2017-12-05 13:31:57]select * from cz_auth_rule
+[2017-12-05 13:31:57]UPDATE `cz_auth_rule` SET `title`='权限管理',`pid`='6',`url`='Admin/Rule/inde',`status`='1' WHERE `id`=5
+[2017-12-05 13:31:59]set names utf8
+[2017-12-05 13:31:59]DESC cz_auth_rule
+[2017-12-05 13:31:59]select * from cz_auth_rule
+[2017-12-05 13:32:07]set names utf8
+[2017-12-05 13:32:07]DESC cz_auth_rule
+[2017-12-05 13:32:07]select * from `cz_auth_rule` where `id`=5
+[2017-12-05 13:32:07]select * from cz_auth_rule
+[2017-12-05 13:32:10]set names utf8
+[2017-12-05 13:32:10]DESC cz_auth_rule
+[2017-12-05 13:32:10]select * from cz_auth_rule
+[2017-12-05 13:32:10]UPDATE `cz_auth_rule` SET `title`='权限管理',`pid`='4',`url`='Admin/Rule/inde',`status`='1' WHERE `id`=5
+[2017-12-05 13:32:12]set names utf8
+[2017-12-05 13:32:12]DESC cz_auth_rule
+[2017-12-05 13:32:12]select * from cz_auth_rule
+[2017-12-05 13:33:01]set names utf8
+[2017-12-05 13:33:01]DESC cz_auth_rule
+[2017-12-05 13:33:01]select * from cz_auth_rule
+[2017-12-05 13:33:02]set names utf8
+[2017-12-05 13:33:02]DESC cz_auth_rule
+[2017-12-05 13:33:02]select * from cz_auth_rule
+[2017-12-05 13:33:02]set names utf8
+[2017-12-05 13:33:02]DESC cz_auth_rule
+[2017-12-05 13:33:02]select * from cz_auth_rule
+[2017-12-05 13:33:02]set names utf8
+[2017-12-05 13:33:02]DESC cz_auth_rule
+[2017-12-05 13:33:02]select * from cz_auth_rule
+[2017-12-05 13:33:03]set names utf8
+[2017-12-05 13:33:03]DESC cz_auth_rule
+[2017-12-05 13:33:03]select * from cz_auth_rule
+[2017-12-05 13:33:03]set names utf8
+[2017-12-05 13:33:03]DESC cz_auth_rule
+[2017-12-05 13:33:03]select * from cz_auth_rule
+[2017-12-05 13:33:03]set names utf8
+[2017-12-05 13:33:03]DESC cz_auth_rule
+[2017-12-05 13:33:03]select * from cz_auth_rule
+[2017-12-05 13:33:03]set names utf8
+[2017-12-05 13:33:03]DESC cz_auth_rule
+[2017-12-05 13:33:03]select * from cz_auth_rule
+[2017-12-05 13:33:16]set names utf8
+[2017-12-05 13:33:16]DESC cz_auth_rule
+[2017-12-05 13:33:16]select * from cz_auth_rule
+[2017-12-05 13:33:25]set names utf8
+[2017-12-05 13:33:25]DESC cz_auth_rule
+[2017-12-05 13:33:25]select * from cz_auth_rule
+[2017-12-05 13:34:21]set names utf8
+[2017-12-05 13:34:21]DESC cz_admin_nav
+[2017-12-05 13:34:21]select * from cz_admin_nav
+[2017-12-05 13:34:21]set names utf8
+[2017-12-05 13:34:21]DESC cz_admin_nav
+[2017-12-05 13:34:21]select * from cz_admin_nav
+[2017-12-05 13:34:22]set names utf8
+[2017-12-05 13:34:22]DESC cz_auth_rule
+[2017-12-05 13:34:22]select * from cz_auth_rule
+[2017-12-05 13:34:24]set names utf8
+[2017-12-05 13:34:24]DESC cz_auth_rule
+[2017-12-05 13:34:24]select * from cz_auth_rule
+[2017-12-05 13:34:45]set names utf8
+[2017-12-05 13:34:45]DESC cz_admin_nav
+[2017-12-05 13:34:45]select * from cz_admin_nav
+[2017-12-05 13:34:47]set names utf8
+[2017-12-05 13:34:47]DESC cz_auth_rule
+[2017-12-05 13:34:47]select * from cz_auth_rule
+[2017-12-05 13:34:50]set names utf8
+[2017-12-05 13:34:50]DESC cz_auth_group
+[2017-12-05 13:34:50]select * from cz_auth_group
+[2017-12-05 13:34:52]set names utf8
+[2017-12-05 13:34:52]DESC cz_user
+[2017-12-05 13:34:52]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:34:54]set names utf8
+[2017-12-05 13:34:54]DESC cz_user
+[2017-12-05 13:34:54]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:35:45]set names utf8
+[2017-12-05 13:35:45]DESC cz_user
+[2017-12-05 13:35:45]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:35:45]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:35:45]set names utf8
+[2017-12-05 13:35:45]DESC cz_auth_group
+[2017-12-05 13:35:45]select * from cz_auth_group
+[2017-12-05 13:38:56]set names utf8
+[2017-12-05 13:38:56]DESC cz_user
+[2017-12-05 13:38:56]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:38:56]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:38:56]set names utf8
+[2017-12-05 13:38:56]DESC cz_auth_group
+[2017-12-05 13:38:56]select * from cz_auth_group
+[2017-12-05 13:38:58]set names utf8
+[2017-12-05 13:38:58]DESC cz_admin_nav
+[2017-12-05 13:38:58]select * from cz_admin_nav
+[2017-12-05 13:38:59]set names utf8
+[2017-12-05 13:38:59]DESC cz_user
+[2017-12-05 13:38:59]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:39:00]set names utf8
+[2017-12-05 13:39:00]DESC cz_user
+[2017-12-05 13:39:00]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:39:00]set names utf8
+[2017-12-05 13:39:00]DESC cz_user
+[2017-12-05 13:39:00]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:39:00]set names utf8
+[2017-12-05 13:39:00]DESC cz_user
+[2017-12-05 13:39:00]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:39:14]set names utf8
+[2017-12-05 13:39:14]DESC cz_admin_nav
+[2017-12-05 13:39:14]select * from cz_admin_nav
+[2017-12-05 13:39:16]set names utf8
+[2017-12-05 13:39:16]DESC cz_user
+[2017-12-05 13:39:16]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:39:19]set names utf8
+[2017-12-05 13:39:19]DESC cz_user
+[2017-12-05 13:39:19]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:39:19]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:39:19]set names utf8
+[2017-12-05 13:39:19]DESC cz_auth_group
+[2017-12-05 13:39:19]select * from cz_auth_group
+[2017-12-05 13:40:18]set names utf8
+[2017-12-05 13:40:18]DESC cz_user
+[2017-12-05 13:40:18]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:40:18]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:40:18]set names utf8
+[2017-12-05 13:40:18]DESC cz_auth_group
+[2017-12-05 13:40:18]select * from cz_auth_group
+[2017-12-05 13:40:19]set names utf8
+[2017-12-05 13:40:19]DESC cz_admin_nav
+[2017-12-05 13:40:19]select * from cz_admin_nav
+[2017-12-05 13:40:21]set names utf8
+[2017-12-05 13:40:21]DESC cz_user
+[2017-12-05 13:40:21]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:40:41]set names utf8
+[2017-12-05 13:40:41]DESC cz_user
+[2017-12-05 13:40:41]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:40:45]set names utf8
+[2017-12-05 13:40:45]DESC cz_user
+[2017-12-05 13:40:45]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:40:45]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:40:45]set names utf8
+[2017-12-05 13:40:45]DESC cz_auth_group
+[2017-12-05 13:40:45]select * from cz_auth_group
+[2017-12-05 13:41:56]set names utf8
+[2017-12-05 13:41:56]DESC cz_user
+[2017-12-05 13:41:56]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:41:56]set names utf8
+[2017-12-05 13:41:56]DESC cz_user
+[2017-12-05 13:41:56]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:41:57]set names utf8
+[2017-12-05 13:41:57]DESC cz_user
+[2017-12-05 13:41:57]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:41:57]set names utf8
+[2017-12-05 13:41:57]DESC cz_user
+[2017-12-05 13:41:57]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:41:58]set names utf8
+[2017-12-05 13:41:58]DESC cz_user
+[2017-12-05 13:41:58]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:41:58]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:41:58]set names utf8
+[2017-12-05 13:41:58]DESC cz_auth_group
+[2017-12-05 13:41:58]select * from cz_auth_group
+[2017-12-05 13:42:08]set names utf8
+[2017-12-05 13:42:08]DESC cz_user
+[2017-12-05 13:42:08]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:42:08]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:42:08]set names utf8
+[2017-12-05 13:42:08]DESC cz_auth_group
+[2017-12-05 13:42:08]select * from cz_auth_group
+[2017-12-05 13:43:45]set names utf8
+[2017-12-05 13:43:45]DESC cz_user
+[2017-12-05 13:43:45]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:43:48]set names utf8
+[2017-12-05 13:43:48]DESC cz_user
+[2017-12-05 13:43:48]select * from `cz_user` where `user_id`=15
+[2017-12-05 13:43:48]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 13:43:48]set names utf8
+[2017-12-05 13:43:48]DESC cz_auth_group
+[2017-12-05 13:43:48]select * from cz_auth_group
+[2017-12-05 13:43:49]set names utf8
+[2017-12-05 13:43:49]DESC cz_user
+[2017-12-05 13:43:49]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 13:43:51]set names utf8
+[2017-12-05 13:43:51]DESC cz_user
+[2017-12-05 13:43:51]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:43:51]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:43:51]set names utf8
+[2017-12-05 13:43:51]DESC cz_auth_group
+[2017-12-05 13:43:51]select * from cz_auth_group
+[2017-12-05 13:46:00]set names utf8
+[2017-12-05 13:46:00]DESC cz_auth_group
+[2017-12-05 13:46:00]select * from cz_auth_group
+[2017-12-05 13:46:58]set names utf8
+[2017-12-05 13:46:58]DESC cz_auth_group
+[2017-12-05 13:46:58]select * from cz_auth_group
+[2017-12-05 13:48:28]set names utf8
+[2017-12-05 13:48:28]DESC cz_auth_group
+[2017-12-05 13:48:28]select * from cz_auth_group
+[2017-12-05 13:48:29]set names utf8
+[2017-12-05 13:48:29]DESC cz_auth_group
+[2017-12-05 13:48:29]select * from cz_auth_group
+[2017-12-05 13:48:32]set names utf8
+[2017-12-05 13:48:32]DESC cz_user
+[2017-12-05 13:48:32]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:48:32]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:48:32]set names utf8
+[2017-12-05 13:48:32]DESC cz_auth_group
+[2017-12-05 13:48:32]select * from cz_auth_group
+[2017-12-05 13:48:33]set names utf8
+[2017-12-05 13:48:33]DESC cz_user
+[2017-12-05 13:48:33]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:48:33]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:48:33]set names utf8
+[2017-12-05 13:48:33]DESC cz_auth_group
+[2017-12-05 13:48:33]select * from cz_auth_group
+[2017-12-05 13:51:23]set names utf8
+[2017-12-05 13:51:23]DESC cz_user
+[2017-12-05 13:51:23]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:51:23]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:51:23]set names utf8
+[2017-12-05 13:51:23]DESC cz_auth_group
+[2017-12-05 13:51:23]select * from cz_auth_group
+[2017-12-05 13:51:25]set names utf8
+[2017-12-05 13:51:25]DESC cz_user
+[2017-12-05 13:51:25]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:51:25]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:51:25]set names utf8
+[2017-12-05 13:51:25]DESC cz_auth_group
+[2017-12-05 13:51:25]select * from cz_auth_group
+[2017-12-05 13:51:54]set names utf8
+[2017-12-05 13:51:54]DESC cz_user
+[2017-12-05 13:51:54]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:51:54]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:51:54]set names utf8
+[2017-12-05 13:51:54]DESC cz_auth_group
+[2017-12-05 13:51:54]select * from cz_auth_group
+[2017-12-05 13:52:42]set names utf8
+[2017-12-05 13:52:42]DESC cz_user
+[2017-12-05 13:52:42]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:52:42]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:52:42]set names utf8
+[2017-12-05 13:52:42]DESC cz_auth_group
+[2017-12-05 13:52:42]select * from cz_auth_group
+[2017-12-05 13:53:26]set names utf8
+[2017-12-05 13:53:26]DESC cz_user
+[2017-12-05 13:53:26]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:53:26]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:53:26]set names utf8
+[2017-12-05 13:53:26]DESC cz_auth_group
+[2017-12-05 13:53:26]select * from cz_auth_group
+[2017-12-05 13:53:36]set names utf8
+[2017-12-05 13:53:36]DESC cz_user
+[2017-12-05 13:53:36]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:53:36]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:53:36]set names utf8
+[2017-12-05 13:53:36]DESC cz_auth_group
+[2017-12-05 13:53:36]select * from cz_auth_group
+[2017-12-05 13:54:31]set names utf8
+[2017-12-05 13:54:31]DESC cz_user
+[2017-12-05 13:54:31]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:54:31]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:54:31]set names utf8
+[2017-12-05 13:54:31]DESC cz_auth_group
+[2017-12-05 13:54:31]select * from cz_auth_group
+[2017-12-05 13:54:33]set names utf8
+[2017-12-05 13:54:33]DESC cz_user
+[2017-12-05 13:54:33]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:54:33]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:54:33]set names utf8
+[2017-12-05 13:54:33]DESC cz_auth_group
+[2017-12-05 13:54:33]select * from cz_auth_group
+[2017-12-05 13:54:33]set names utf8
+[2017-12-05 13:54:33]DESC cz_user
+[2017-12-05 13:54:33]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:54:33]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:54:33]set names utf8
+[2017-12-05 13:54:33]DESC cz_auth_group
+[2017-12-05 13:54:33]select * from cz_auth_group
+[2017-12-05 13:54:33]set names utf8
+[2017-12-05 13:54:33]DESC cz_user
+[2017-12-05 13:54:33]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:54:33]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:54:33]set names utf8
+[2017-12-05 13:54:33]DESC cz_auth_group
+[2017-12-05 13:54:33]select * from cz_auth_group
+[2017-12-05 13:54:34]set names utf8
+[2017-12-05 13:54:34]DESC cz_user
+[2017-12-05 13:54:34]select * from `cz_user` where `user_id`=14
+[2017-12-05 13:54:34]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 13:54:34]set names utf8
+[2017-12-05 13:54:34]DESC cz_auth_group
+[2017-12-05 13:54:34]select * from cz_auth_group
+[2017-12-05 13:56:48]set names utf8
+[2017-12-05 13:56:48]DESC cz_category
+[2017-12-05 13:56:48]select * from cz_category
+[2017-12-05 13:57:34]set names utf8
+[2017-12-05 13:57:34]DESC cz_category
+[2017-12-05 13:57:34]select * from `cz_category` where `cat_id`=1
+[2017-12-05 13:57:34]select * from cz_category
+[2017-12-05 14:01:24]set names utf8
+[2017-12-05 14:01:24]DESC cz_user
+[2017-12-05 14:01:24]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:01:24]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:01:24]set names utf8
+[2017-12-05 14:01:24]DESC cz_auth_group
+[2017-12-05 14:01:24]select * from cz_auth_group
+[2017-12-05 14:01:24]set names utf8
+[2017-12-05 14:01:24]DESC cz_user
+[2017-12-05 14:01:24]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:01:24]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:01:24]set names utf8
+[2017-12-05 14:01:24]DESC cz_auth_group
+[2017-12-05 14:01:24]select * from cz_auth_group
+[2017-12-05 14:01:28]set names utf8
+[2017-12-05 14:01:28]DESC cz_user
+[2017-12-05 14:01:28]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:01:30]set names utf8
+[2017-12-05 14:01:30]DESC cz_user
+[2017-12-05 14:01:30]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:01:30]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:01:30]set names utf8
+[2017-12-05 14:01:30]DESC cz_auth_group
+[2017-12-05 14:01:30]select * from cz_auth_group
+[2017-12-05 14:05:36]set names utf8
+[2017-12-05 14:05:36]DESC cz_user
+[2017-12-05 14:05:36]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:05:37]set names utf8
+[2017-12-05 14:05:37]DESC cz_user
+[2017-12-05 14:05:37]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:05:37]set names utf8
+[2017-12-05 14:05:37]DESC cz_user
+[2017-12-05 14:05:37]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:05:38]set names utf8
+[2017-12-05 14:05:38]DESC cz_user
+[2017-12-05 14:05:38]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:05:38]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:05:38]set names utf8
+[2017-12-05 14:05:38]DESC cz_auth_group
+[2017-12-05 14:05:38]select * from cz_auth_group
+[2017-12-05 14:06:56]set names utf8
+[2017-12-05 14:06:56]DESC cz_user
+[2017-12-05 14:06:56]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:06:56]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:06:56]set names utf8
+[2017-12-05 14:06:56]DESC cz_auth_group
+[2017-12-05 14:06:56]select * from cz_auth_group
+[2017-12-05 14:06:56]set names utf8
+[2017-12-05 14:06:56]DESC cz_user
+[2017-12-05 14:06:56]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:06:56]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:06:56]set names utf8
+[2017-12-05 14:06:56]DESC cz_auth_group
+[2017-12-05 14:06:56]select * from cz_auth_group
+[2017-12-05 14:06:57]set names utf8
+[2017-12-05 14:06:57]DESC cz_user
+[2017-12-05 14:06:57]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:06:57]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:06:57]set names utf8
+[2017-12-05 14:06:57]DESC cz_auth_group
+[2017-12-05 14:06:57]select * from cz_auth_group
+[2017-12-05 14:07:01]set names utf8
+[2017-12-05 14:07:01]DESC cz_user
+[2017-12-05 14:07:01]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:07:11]set names utf8
+[2017-12-05 14:07:11]DESC cz_user
+[2017-12-05 14:07:11]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:07:13]set names utf8
+[2017-12-05 14:07:13]DESC cz_user
+[2017-12-05 14:07:13]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:07:13]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:07:13]set names utf8
+[2017-12-05 14:07:13]DESC cz_auth_group
+[2017-12-05 14:07:13]select * from cz_auth_group
+[2017-12-05 14:07:55]set names utf8
+[2017-12-05 14:07:55]DESC cz_user
+[2017-12-05 14:07:55]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:07:57]set names utf8
+[2017-12-05 14:07:57]DESC cz_user
+[2017-12-05 14:07:57]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:07:57]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:07:57]set names utf8
+[2017-12-05 14:07:57]DESC cz_auth_group
+[2017-12-05 14:07:57]select * from cz_auth_group
+[2017-12-05 14:08:51]set names utf8
+[2017-12-05 14:08:51]DESC cz_user
+[2017-12-05 14:08:51]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:08:51]set names utf8
+[2017-12-05 14:08:51]DESC cz_user
+[2017-12-05 14:08:51]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:08:52]set names utf8
+[2017-12-05 14:08:52]DESC cz_user
+[2017-12-05 14:08:52]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:08:52]set names utf8
+[2017-12-05 14:08:52]DESC cz_user
+[2017-12-05 14:08:52]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:08:52]set names utf8
+[2017-12-05 14:08:52]DESC cz_user
+[2017-12-05 14:08:52]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:08:54]set names utf8
+[2017-12-05 14:08:54]DESC cz_user
+[2017-12-05 14:08:54]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:08:54]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:08:54]set names utf8
+[2017-12-05 14:08:54]DESC cz_auth_group
+[2017-12-05 14:08:54]select * from cz_auth_group
+[2017-12-05 14:09:55]set names utf8
+[2017-12-05 14:09:55]DESC cz_user
+[2017-12-05 14:09:55]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:09:55]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:09:55]set names utf8
+[2017-12-05 14:09:55]DESC cz_auth_group
+[2017-12-05 14:09:55]select * from cz_auth_group
+[2017-12-05 14:26:32]set names utf8
+[2017-12-05 14:26:32]DESC cz_user
+[2017-12-05 14:26:32]select * from `cz_user` where `user_id`=14
+[2017-12-05 14:26:32]select groud_id from cz_auth_group_id WHERE uid = 14
+[2017-12-05 14:26:32]set names utf8
+[2017-12-05 14:26:32]DESC cz_auth_group
+[2017-12-05 14:26:32]select * from cz_auth_group
+[2017-12-05 14:26:33]set names utf8
+[2017-12-05 14:26:33]DESC cz_user
+[2017-12-05 14:26:33]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:26:34]set names utf8
+[2017-12-05 14:26:34]DESC cz_user
+[2017-12-05 14:26:34]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:26:36]set names utf8
+[2017-12-05 14:26:36]DESC cz_user
+[2017-12-05 14:26:36]select * from `cz_user` where `user_id`=15
+[2017-12-05 14:26:36]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 14:26:36]set names utf8
+[2017-12-05 14:26:36]DESC cz_auth_group
+[2017-12-05 14:26:36]select * from cz_auth_group
+[2017-12-05 14:26:56]set names utf8
+[2017-12-05 14:26:56]DESC cz_user
+[2017-12-05 14:26:56]UPDATE `cz_user` SET `user_name`='user4',`password`='pass4',`email`='user4@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 14:26:56]set names utf8
+[2017-12-05 14:26:56]DESC cz_auth_group_id
+[2017-12-05 14:26:56]UPDATE `cz_auth_group_id` SET `uid`='15',`groud_id`='2' WHERE 0
+[2017-12-05 14:26:56]UPDATE `cz_auth_group_id` SET `uid`='15',`groud_id`='3' WHERE 0
+[2017-12-05 14:26:58]set names utf8
+[2017-12-05 14:26:58]DESC cz_user
+[2017-12-05 14:26:58]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id
+[2017-12-05 14:27:14]set names utf8
+[2017-12-05 14:27:14]DESC cz_user
+[2017-12-05 14:27:14]select * from `cz_user` where `user_id`=15
+[2017-12-05 14:27:14]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 14:27:14]set names utf8
+[2017-12-05 14:27:14]DESC cz_auth_group
+[2017-12-05 14:27:14]select * from cz_auth_group
+[2017-12-05 14:27:21]set names utf8
+[2017-12-05 14:27:21]DESC cz_user
+[2017-12-05 14:27:21]UPDATE `cz_user` SET `user_name`='user4',`password`='pass4',`email`='user4@qq.com',`status`='0' WHERE `user_id`=15
+[2017-12-05 14:27:25]set names utf8
+[2017-12-05 14:27:25]DESC cz_user
+[2017-12-05 14:27:25]select * from `cz_user` where `user_id`=0
+[2017-12-05 14:27:25]select groud_id from cz_auth_group_id WHERE uid = 0
+[2017-12-05 14:27:25]set names utf8
+[2017-12-05 14:27:25]DESC cz_auth_group
+[2017-12-05 14:27:25]select * from cz_auth_group
+[2017-12-05 14:27:28]set names utf8
+[2017-12-05 14:27:28]DESC cz_user
+[2017-12-05 14:27:28]select * from `cz_user` where `user_id`=15
+[2017-12-05 14:27:28]select groud_id from cz_auth_group_id WHERE uid = 15
+[2017-12-05 14:27:28]set names utf8
+[2017-12-05 14:27:28]DESC cz_auth_group
+[2017-12-05 14:27:28]select * from cz_auth_group
+[2017-12-05 14:27:34]set names utf8
+[2017-12-05 14:27:34]DESC cz_user
+[2017-12-05 14:27:34]UPDATE `cz_user` SET `user_name`='user4',`password`='pass4',`email`='user4@qq.com',`status`='1' WHERE `user_id`=15
+[2017-12-05 14:27:34]set names utf8
+[2017-12-05 14:27:34]DESC cz_auth_group_id
+[2017-12-05 14:27:34]UPDATE `cz_auth_group_id` SET `uid`='15',`groud_id`='1' WHERE 0
+[2017-12-05 14:27:34]UPDATE `cz_auth_group_id` SET `uid`='15',`groud_id`='2' WHERE 0
+[2017-12-05 14:27:35]UPDATE `cz_auth_group_id` SET `uid`='15',`groud_id`='3' WHERE 0
+[2017-12-05 14:27:37]set names utf8
+[2017-12-05 14:27:37]DESC cz_user
+[2017-12-05 14:27:37]select a.user_id ,a.user_name,a.email,a.status,a.reg_time,a.last_login_time,b.groud_id ,c.title from cz_user AS a  JOIN cz_auth_group_id AS b ON a.user_id = b.uid
+              join cz_auth_group AS c ON  b.groud_id = c.id

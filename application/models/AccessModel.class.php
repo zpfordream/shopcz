@@ -36,4 +36,16 @@ class AccessModel extends Model{
     }
 
 
+    //后台，定义一个方法，获取一个节点的所有子节点
+    public function getSubIds($pid){
+        $sql  = "select * from {$this->table}";
+        $accesses =  $this ->db->getAll($sql);
+        $accesses = $this ->tree($accesses,$pid);
+        $list = array();
+        foreach($accesses as $access){
+            $list[] = $access['id'];
+        }
+        return $list;
+    }
+
 }

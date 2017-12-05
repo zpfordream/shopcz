@@ -9,10 +9,11 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="index.php?p=admin&c=category&a=add">添加分类</a></span>
+<span class="action-span"><a href="index.php?p=admin&c=access&a=add">添加权限</a></span>
 <span class="action-span1"><a href="index.php?p=admin&c=index&a=index">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span>
 <div style="clear:both"></div>
 </h1>
+
 
 <form method="post" action="" name="listForm">
 <!-- start ad position list -->
@@ -20,33 +21,30 @@
 		<table width="100%" cellspacing="1" cellpadding="2" id="list-table">
 			<tbody>
 				<tr>
-					<th>分类名称</th>
-					<th>商品数量</th>
-					<th>数量单位</th>
-					<th>是否显示</th>
-					<th>排序</th>
+					<th>id</th>
+					<th>父id</th>
+					<th>权限名称</th>
+					<th>权限url</th>
+					<th>权限状态</th>
 					<th>操作</th>
 				</tr>
-                <?php foreach( $cats as $cat ):  ?>
-				<tr align="center" class="0" id="<?php echo $cat['parent_id']; ?>_<?php echo $cat['cat_id']; ?>">
-					<td align="left" class="first-cell">
-                        <?php echo str_repeat("&nbsp;&nbsp;",$cat['level']); ?>
-						<span><a href="goods.php?act=list&amp;cat_id=1"><?php echo $cat['cat_name']; ?></a></span>
-					 </td>
-					<td width="10%">0</td>
-					<td width="10%"><span onclick="listTable.edit(this, 'edit_measure_unit', 1)" title="点击修改内容" style=""><?php echo $cat['unit']; ?></span></td>
-					<td width="10%"><img src="application/views/admin/images/yes.gif" onclick="listTable.toggle(this, 'toggle_is_show', 1)"><?php echo $cat['is_show']==1 ? "right" : "wrong" ; ?></td>
 
-					<td width="10%" align="right"><span onclick="listTable.edit(this, 'edit_sort_order', 1)" title="点击修改内容" style=""><?php echo $cat['sort_order']; ?></span></td>
+                <?php foreach( $accesses as $access ):  ?>
+				<tr align="center" class="0" id="<?php echo $access['pid']; ?>_<?php echo $access['id']; ?>">
+					<td width="10%"><?php echo $access['id']; ?></td>
+                    <td width="10%"><?php echo $access['pid']; ?></td>
+                    <td width="10%">
+                        <?php echo str_repeat("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",$access['level']); ?>
+                        <?php echo $access['title']; ?></span>
+                    </td>
+					<td width="10%"><?php echo $access['url']; ?></td>
+					<td width="10%"><?php echo $access['status']; ?></td>
 					<td width="24%" align="center">
-						<a href="index.php?p=admin&c=category&a=edit&cat_id=<?php echo $cat['cat_id']; ?>">编辑</a> |
-						<a href="index.php?p=admin&c=category&a=delete&cat_id=<?php echo $cat['cat_id']; ?>" onclick="javascript:return confirm('您确认要删除这条记录吗?');" title="移除">移除</a>
+						<a href="index.php?p=admin&c=access&a=edit&id=<?php echo $access['id']; ?>">编辑</a> |
+						<a href="index.php?p=admin&c=access&a=delete&id=<?php echo $access['id']; ?>" onclick="javascript:return confirm('您确认要删除这条记录吗?');" title="移除">移除</a>
 					</td>
 				</tr>
                 <?php endforeach ;  ?>
-
-
-
 	</tbody>
   </table>
 </div>

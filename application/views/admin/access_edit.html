@@ -10,30 +10,30 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="index.php?p=admin&c=category&a=index">商品分类</a></span>
+<span class="action-span"><a href="index.php?p=admin&c=access&a=index">权限列表</a></span>
 <span class="action-span1"><a href="index.php?act=main">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
 <div style="clear:both"></div>
 </h1>
 <!-- start add new category form -->
 <div class="main-div">
-  <form action="index.php?p=admin&c=Category&a=update" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+  <form action="index.php?p=admin&c=access&a=update" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
 	 <table width="100%" id="general-table">
 		<tbody>
 			<tr>
-				<td class="label">分类名称:</td>
-				<td><input type="text" name="cat_name" maxlength="20" value="<?php echo $cat['cat_name']; ?>" size="27"> <font color="red">*</font></td>
+				<td class="label">权限名称:</td>
+				<td><input type="text" name="title" maxlength="20" value="<?php echo $access['title']; ?>" size="27"> <font color="red">*</font></td>
 			</tr>
 			<tr>
-				<td class="label">上级分类:</td>
+				<td class="label">上级名称:</td>
 				<td>
-					<select name="parent_id">
+					<select name="pid">
 						<option value="0">顶级分类</option>
-						<?php foreach($cats as $v) : ?>
-						<option value="<?php echo $v['cat_id']; ?>"
-						  <?php echo $v['cat_id'] == $cat['parent_id'] ? "selected='selected'": ""  ; ?>
+						<?php foreach($accesses as $v) : ?>
+						<option value="<?php echo $v['id']; ?>"
+						  <?php echo $v['id'] == $access['pid'] ? "selected='selected'": ""  ; ?>
 						>
 						<?php echo str_repeat('&nbsp;&nbsp' , $v['level']);  ?>
-						<?php echo $v['cat_name'] ;  ?>
+						<?php echo $v['title'] ;  ?>
 						</option>
 						<?php endforeach ;?>
 					</select>
@@ -41,26 +41,16 @@
 			</tr>
 
 			<tr id="measure_unit">
-				<td class="label">数量单位:</td>
-				<td><input type="text" name="unit" value="<?php echo $cat['unit']; ?>" size="12"></td>
-			</tr>
-			<tr>
-				<td class="label">排序:</td>
-				<td><input type="text" name="sort_order" value="<?php  echo $cat['cat_name']; ?>" size="15"></td>
+				<td class="label">权限URL:</td>
+				<td><input type="text" name="url" value="<?php echo $access['url']; ?>" size="30"></td>
 			</tr>
 
 			<tr>
-				<td class="label">是否显示:</td>
-				<td><input type="radio" name="is_show" value="1"  <?php echo $cat['is_show']==1 ? "checked" : "" ; ?> > 是
-					<input type="radio" name="is_show" value="0"   <?php echo $cat['is_show']==0 ? "checked" : "" ; ?>> 否  </td>
+				<td class="label">状态:</td>
+				<td><input type="radio" name="status" value="1"  <?php echo $access['status']==1 ? "checked" : "" ; ?> > 是
+					<input type="radio" name="status" value="0"   <?php echo $access['status']==0 ? "checked" : "" ; ?>> 否  </td>
 			</tr>
 
-      <tr>
-        <td class="label">分类描述:</td>
-        <td>
-          <textarea name="cat_desc" rows="6" cols="48"><?php echo  $cat['cat_desc']; ?></textarea>
-        </td>
-      </tr>
       </tbody></table>
       <div class="button-div">
         <input type="submit" value=" 确定 ">
@@ -68,7 +58,7 @@
       </div>
     <input type="hidden" name="act" value="insert">
     <input type="hidden" name="old_cat_name" value="">
-    <input type="hidden" name="cat_id" value="<?php  echo $cat['cat_id']; ?>">
+    <input type="hidden" name="id" value="<?php  echo $access['id']; ?>">
   </form>
 </div>
 

@@ -10,8 +10,8 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="index.php?p=admin&c=access&a=index">商品分类</a></span>
-<span class="action-span1"><a href="index.php?act=main">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加分类 </span>
+<span class="action-span"><a href="index.php?p=admin&c=access&a=index">权限列表</a></span>
+<span class="action-span1"><a href="index.php?p=admin&c=access&a=add">SHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加权限 </span>
 <div style="clear:both"></div>
 </h1>
 <!-- start add new category form -->
@@ -29,7 +29,9 @@
 					<select name="pid">
 						<option value="0">顶级权限</option>
 						<?php foreach($accesses as $access ): ?>
-						<option value="<?php echo $access['id'] ; ?>"><?php echo $access['title'] ; ?></option>
+						<option value="<?php echo $access['id'] ; ?>">
+							<?php echo str_repeat( "&nbsp;&nbsp;&nbsp;",$access['level'] ); ?><?php echo $access['title'] ; ?>
+						</option>
 						<?php endforeach; ?>
 					</select>
 				</td>

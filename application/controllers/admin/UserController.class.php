@@ -22,6 +22,10 @@ class UserController extends BaseController{
 
     //插入后台的数据 http://127.0.0.1/shopcz/index.php?p=admin&c=user&a=insert
     public function  insertAction(){
+
+        var_dump($_POST);
+        exit();
+
         //1. 收集表单数据
         $data['user_name']      =    trim($_POST['user_name']);
         $data['password']      =    trim($_POST['password']);
@@ -83,13 +87,9 @@ class UserController extends BaseController{
 
         $userModel = new UserModel('user');
         $users  = $userModel->getUsers();
-        var_dump($users);
+        //var_dump($users);
         include  CUR_VIEW_PATH."user_list.html";
     }
-
-
-
-
 
 
 
@@ -105,7 +105,7 @@ class UserController extends BaseController{
         $groupModel = new GroupModel("auth_group");
         $groups = $groupModel->getGroups();
 
-        var_dump($oneInGroup);
+//        var_dump($oneInGroup);
 //        var_dump($groups);
 //        var_dump($user);
 //        exit;
@@ -116,11 +116,16 @@ class UserController extends BaseController{
     //载入编辑分类后，修改后，提交动作，http://127.0.0.1/shopcz/index.php?p=admin&c=user&a=updateAction
     public function updateAction(){
 
+//        var_dump($_POST);
+//        exit();
+
         //1. 收集表单数据
         $data['user_name'] = trim($_POST['user_name']);
         $data['password'] = trim($_POST['password']);
         $data['email'] = trim($_POST['email']);
         $data['user_id'] = $_POST['user_id'];
+        $data['status'] = $_POST['status'];
+        $data['groups'] = $_POST['groups'];
 
         //2.验证及处理
         //判断分类名称不能为空
@@ -136,8 +141,24 @@ class UserController extends BaseController{
 
         $userModel = new UserModel("user");
 
-        //3. 调用模型完成更新操作
+        //3. 调用模型完成更新操作, 更新函数返回的是影响的行数，不用返回id，因为更新本来就知道id
+        //修改a表和c表，通过b表关联，修改b表的内容时，不能通过id找到后修改，而是把原来的关联表内容删除后，再重新插入关联数据
         if($userModel->update($data)){
+
+            //实例化关联表，用户和组的关联表
+            $auth_group_id = new Model("auth_group_id");
+
+
+            //拿到a表的id，然后和b表的内容 ，拼在一起插入b表
+            foreach( $data['groups'] as $group_id) {
+
+                $group = array(
+                    "uid" => $data['user_id'],
+                    "groud_id" => $group_id,
+                );
+
+                $auth_group_id->update($group);
+            }
             $this->jump("index.php?p=admin&c=user&a=index","更新成功",2);
         }else{
             $this->jump("index.php?p=admin&c=user&a=edit&cat_id=".$data['user_id'],"更新失败",3);
