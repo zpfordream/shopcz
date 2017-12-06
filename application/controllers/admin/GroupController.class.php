@@ -113,6 +113,8 @@ class GroupController extends Controller{
         //实例化用户组表，查看用户组
         $groupModel = new GroupModel('auth_group');
         $group = $groupModel->selectByPk($id);
+        //拿到所有选中的数据，已经组成一维数组了
+        $rules = $groupModel->ruleInGroup($id);
 
         //实例化权限表，获取所有权限，并且按照三维数组展现出来
         $accessModel = new AccessModel('auth_rule');
@@ -137,7 +139,7 @@ class GroupController extends Controller{
         if($groupModel->update($data)){
             $this->jump('index.php?p=admin&c=group&a=index',"给用户组分配权限成功",3);
         }else{
-            $this->jump('index.php?p=admin&c=group&a=configAuth',"给用户组分配权限失败",3);
+            $this->jump('index.php?p=admin&c=group&a=configAuth&id='.$data['id'],"给用户组分配权限失败",3);
         }
 
     }

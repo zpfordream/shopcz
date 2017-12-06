@@ -2115,3 +2115,380 @@
 [2017-12-05 22:51:12]set names utf8
 [2017-12-05 22:51:12]DESC cz_auth_group
 [2017-12-05 22:51:12]select * from cz_auth_group
+[2017-12-06 12:44:45]set names utf8
+[2017-12-06 12:44:45]DESC cz_category
+[2017-12-06 12:44:45]SELECT * from cz_category 
+[2017-12-06 12:44:45]set names utf8
+[2017-12-06 12:44:45]DESC cz_goods
+[2017-12-06 12:44:45]SELECT * FROM cz_goods WHERE is_best = 1 AND is_onsale = 1 ORDER BY add_time DESC LIMIT 4 
+[2017-12-06 12:45:01]set names utf8
+[2017-12-06 12:45:01]DESC cz_user
+[2017-12-06 12:45:01]select * from cz_user where user_name= 'user' and password = 'pass' limit 1
+[2017-12-06 12:45:04]set names utf8
+[2017-12-06 12:45:04]DESC cz_admin_nav
+[2017-12-06 12:45:04]select * from cz_admin_nav
+[2017-12-06 12:45:10]set names utf8
+[2017-12-06 12:45:10]DESC cz_auth_group
+[2017-12-06 12:45:10]select * from cz_auth_group
+[2017-12-06 12:45:15]set names utf8
+[2017-12-06 12:45:15]DESC cz_auth_group
+[2017-12-06 12:45:15]select * from `cz_auth_group` where `id`=1
+[2017-12-06 12:45:15]set names utf8
+[2017-12-06 12:45:15]DESC cz_auth_rule
+[2017-12-06 12:45:15]SELECT * from cz_auth_rule 
+[2017-12-06 12:45:26]set names utf8
+[2017-12-06 12:45:26]DESC cz_auth_group
+[2017-12-06 12:45:26]select * from cz_auth_group
+[2017-12-06 12:45:54]set names utf8
+[2017-12-06 12:45:54]DESC cz_auth_group
+[2017-12-06 12:45:54]select * from `cz_auth_group` where `id`=2
+[2017-12-06 12:45:54]set names utf8
+[2017-12-06 12:45:54]DESC cz_auth_rule
+[2017-12-06 12:45:54]SELECT * from cz_auth_rule 
+[2017-12-06 12:45:59]set names utf8
+[2017-12-06 12:45:59]DESC cz_auth_group
+[2017-12-06 12:46:00]UPDATE `cz_auth_group` SET `rules`='' WHERE `id`=2
+[2017-12-06 12:46:03]set names utf8
+[2017-12-06 12:46:03]DESC cz_auth_group
+[2017-12-06 12:46:03]select * from cz_auth_group
+[2017-12-06 12:46:06]set names utf8
+[2017-12-06 12:46:06]DESC cz_admin_nav
+[2017-12-06 12:46:06]select * from cz_admin_nav
+[2017-12-06 12:46:06]set names utf8
+[2017-12-06 12:46:06]DESC cz_admin_nav
+[2017-12-06 12:46:06]select * from cz_admin_nav
+[2017-12-06 12:46:21]set names utf8
+[2017-12-06 12:46:21]DESC cz_auth_group
+[2017-12-06 12:46:21]select * from cz_auth_group
+[2017-12-06 12:46:29]set names utf8
+[2017-12-06 12:46:29]DESC cz_auth_rule
+[2017-12-06 12:46:29]select * from cz_auth_rule
+[2017-12-06 12:46:43]set names utf8
+[2017-12-06 12:46:43]DESC cz_auth_rule
+[2017-12-06 12:46:43]select * from cz_auth_rule
+[2017-12-06 12:47:08]set names utf8
+[2017-12-06 12:47:08]DESC cz_auth_rule
+[2017-12-06 12:47:08]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('0','商品管理','Admin/goods/','1')
+[2017-12-06 12:47:11]set names utf8
+[2017-12-06 12:47:11]DESC cz_auth_rule
+[2017-12-06 12:47:11]select * from cz_auth_rule
+[2017-12-06 12:47:45]set names utf8
+[2017-12-06 12:47:45]DESC cz_auth_rule
+[2017-12-06 12:47:45]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('14','商品分类','Admin/category/index','1')
+[2017-12-06 12:47:48]set names utf8
+[2017-12-06 12:47:48]DESC cz_auth_rule
+[2017-12-06 12:47:48]select * from cz_auth_rule
+[2017-12-06 12:48:23]set names utf8
+[2017-12-06 12:48:23]DESC cz_auth_rule
+[2017-12-06 12:48:23]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('15','添加分类','Admin/category/add','1')
+[2017-12-06 12:48:26]set names utf8
+[2017-12-06 12:48:26]DESC cz_auth_rule
+[2017-12-06 12:48:26]select * from cz_auth_rule
+[2017-12-06 12:48:40]set names utf8
+[2017-12-06 12:48:40]DESC cz_auth_rule
+[2017-12-06 12:48:40]INSERT INTO `cz_auth_rule` (`pid`,`title`,`url`,`status`) VALUES ('15','删除分类','Admin/category/delete','1')
+[2017-12-06 12:48:43]set names utf8
+[2017-12-06 12:48:43]DESC cz_auth_rule
+[2017-12-06 12:48:43]select * from cz_auth_rule
+[2017-12-06 12:48:43]set names utf8
+[2017-12-06 12:48:43]DESC cz_auth_rule
+[2017-12-06 12:48:43]select * from cz_auth_rule
+[2017-12-06 12:48:53]set names utf8
+[2017-12-06 12:48:53]DESC cz_auth_group
+[2017-12-06 12:48:53]select * from cz_auth_group
+[2017-12-06 12:48:57]set names utf8
+[2017-12-06 12:48:57]DESC cz_auth_group
+[2017-12-06 12:48:57]select * from `cz_auth_group` where `id`=2
+[2017-12-06 12:48:57]set names utf8
+[2017-12-06 12:48:57]DESC cz_auth_rule
+[2017-12-06 12:48:57]SELECT * from cz_auth_rule 
+[2017-12-06 12:49:03]set names utf8
+[2017-12-06 12:49:03]DESC cz_auth_group
+[2017-12-06 12:49:03]UPDATE `cz_auth_group` SET `rules`='14,15,16,17' WHERE `id`=2
+[2017-12-06 12:49:06]set names utf8
+[2017-12-06 12:49:06]DESC cz_auth_group
+[2017-12-06 12:49:06]select * from cz_auth_group
+[2017-12-06 12:49:09]set names utf8
+[2017-12-06 12:49:09]DESC cz_auth_group
+[2017-12-06 12:49:09]select * from `cz_auth_group` where `id`=3
+[2017-12-06 12:49:09]set names utf8
+[2017-12-06 12:49:09]DESC cz_auth_rule
+[2017-12-06 12:49:09]SELECT * from cz_auth_rule 
+[2017-12-06 12:49:18]set names utf8
+[2017-12-06 12:49:18]DESC cz_auth_group
+[2017-12-06 12:49:18]UPDATE `cz_auth_group` SET `rules`='14,15,16' WHERE `id`=3
+[2017-12-06 12:49:21]set names utf8
+[2017-12-06 12:49:21]DESC cz_auth_group
+[2017-12-06 12:49:21]select * from cz_auth_group
+[2017-12-06 13:44:42]set names utf8
+[2017-12-06 13:44:42]DESC cz_admin_nav
+[2017-12-06 13:44:42]select * from cz_admin_nav
+[2017-12-06 13:44:44]set names utf8
+[2017-12-06 13:44:44]DESC cz_auth_rule
+[2017-12-06 13:44:44]select * from cz_auth_rule
+[2017-12-06 13:44:45]set names utf8
+[2017-12-06 13:44:45]DESC cz_auth_group
+[2017-12-06 13:44:45]select * from cz_auth_group
+[2017-12-06 13:44:51]set names utf8
+[2017-12-06 13:44:51]DESC cz_auth_group
+[2017-12-06 13:44:51]select * from `cz_auth_group` where `id`=1
+[2017-12-06 13:44:51]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 13:44:51]set names utf8
+[2017-12-06 13:44:51]DESC cz_auth_rule
+[2017-12-06 13:44:51]SELECT * from cz_auth_rule 
+[2017-12-06 13:46:04]set names utf8
+[2017-12-06 13:46:04]DESC cz_admin_nav
+[2017-12-06 13:46:04]select * from cz_admin_nav
+[2017-12-06 13:46:06]set names utf8
+[2017-12-06 13:46:06]DESC cz_auth_group
+[2017-12-06 13:46:06]select * from cz_auth_group
+[2017-12-06 13:46:07]set names utf8
+[2017-12-06 13:46:07]DESC cz_auth_group
+[2017-12-06 13:46:07]select * from `cz_auth_group` where `id`=1
+[2017-12-06 13:46:07]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 13:46:07]set names utf8
+[2017-12-06 13:46:07]DESC cz_auth_rule
+[2017-12-06 13:46:07]SELECT * from cz_auth_rule 
+[2017-12-06 13:47:15]set names utf8
+[2017-12-06 13:47:15]DESC cz_auth_group
+[2017-12-06 13:47:15]select * from cz_auth_group
+[2017-12-06 13:47:17]set names utf8
+[2017-12-06 13:47:17]DESC cz_auth_group
+[2017-12-06 13:47:17]select * from `cz_auth_group` where `id`=1
+[2017-12-06 13:47:17]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 13:47:17]set names utf8
+[2017-12-06 13:47:17]DESC cz_auth_rule
+[2017-12-06 13:47:17]SELECT * from cz_auth_rule 
+[2017-12-06 13:49:14]set names utf8
+[2017-12-06 13:49:14]DESC cz_auth_group
+[2017-12-06 13:49:14]select * from cz_auth_group
+[2017-12-06 13:49:15]set names utf8
+[2017-12-06 13:49:15]DESC cz_auth_group
+[2017-12-06 13:49:15]select * from cz_auth_group
+[2017-12-06 13:49:17]set names utf8
+[2017-12-06 13:49:17]DESC cz_auth_group
+[2017-12-06 13:49:17]select * from `cz_auth_group` where `id`=1
+[2017-12-06 13:49:17]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 13:51:16]set names utf8
+[2017-12-06 13:51:16]DESC cz_auth_group
+[2017-12-06 13:51:16]select * from `cz_auth_group` where `id`=1
+[2017-12-06 13:51:16]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:02:22]set names utf8
+[2017-12-06 14:02:22]DESC cz_auth_group
+[2017-12-06 14:02:22]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:02:22]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:03:15]set names utf8
+[2017-12-06 14:03:15]DESC cz_auth_group
+[2017-12-06 14:03:15]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:03:15]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:03:45]set names utf8
+[2017-12-06 14:03:45]DESC cz_auth_group
+[2017-12-06 14:03:45]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:03:45]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:04:13]set names utf8
+[2017-12-06 14:04:13]DESC cz_auth_group
+[2017-12-06 14:04:13]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:04:13]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:09:26]set names utf8
+[2017-12-06 14:09:26]DESC cz_auth_group
+[2017-12-06 14:09:26]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:09:26]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:09:26]set names utf8
+[2017-12-06 14:09:26]DESC cz_auth_rule
+[2017-12-06 14:09:26]SELECT * from cz_auth_rule 
+[2017-12-06 14:09:31]set names utf8
+[2017-12-06 14:09:31]DESC cz_auth_group
+[2017-12-06 14:09:31]select * from cz_auth_group
+[2017-12-06 14:09:33]set names utf8
+[2017-12-06 14:09:33]DESC cz_auth_group
+[2017-12-06 14:09:33]select * from cz_auth_group
+[2017-12-06 14:09:33]set names utf8
+[2017-12-06 14:09:33]DESC cz_auth_group
+[2017-12-06 14:09:33]select * from cz_auth_group
+[2017-12-06 14:09:35]set names utf8
+[2017-12-06 14:09:35]DESC cz_auth_group
+[2017-12-06 14:09:35]select * from `cz_auth_group` where `id`=2
+[2017-12-06 14:09:35]select rules from cz_auth_group WHERE id = 2
+[2017-12-06 14:09:35]set names utf8
+[2017-12-06 14:09:35]DESC cz_auth_rule
+[2017-12-06 14:09:35]SELECT * from cz_auth_rule 
+[2017-12-06 14:09:41]set names utf8
+[2017-12-06 14:09:41]DESC cz_auth_group
+[2017-12-06 14:09:41]select * from cz_auth_group
+[2017-12-06 14:09:43]set names utf8
+[2017-12-06 14:09:43]DESC cz_auth_group
+[2017-12-06 14:09:43]select * from `cz_auth_group` where `id`=3
+[2017-12-06 14:09:43]select rules from cz_auth_group WHERE id = 3
+[2017-12-06 14:09:43]set names utf8
+[2017-12-06 14:09:43]DESC cz_auth_rule
+[2017-12-06 14:09:43]SELECT * from cz_auth_rule 
+[2017-12-06 14:09:47]set names utf8
+[2017-12-06 14:09:47]DESC cz_auth_group
+[2017-12-06 14:09:47]select * from cz_auth_group
+[2017-12-06 14:09:48]set names utf8
+[2017-12-06 14:09:48]DESC cz_auth_group
+[2017-12-06 14:09:48]select * from `cz_auth_group` where `id`=2
+[2017-12-06 14:09:48]select rules from cz_auth_group WHERE id = 2
+[2017-12-06 14:09:48]set names utf8
+[2017-12-06 14:09:48]DESC cz_auth_rule
+[2017-12-06 14:09:48]SELECT * from cz_auth_rule 
+[2017-12-06 14:09:51]set names utf8
+[2017-12-06 14:09:51]DESC cz_auth_group
+[2017-12-06 14:09:51]select * from cz_auth_group
+[2017-12-06 14:09:54]set names utf8
+[2017-12-06 14:09:54]DESC cz_auth_group
+[2017-12-06 14:09:54]select * from `cz_auth_group` where `id`=2
+[2017-12-06 14:09:54]select rules from cz_auth_group WHERE id = 2
+[2017-12-06 14:09:54]set names utf8
+[2017-12-06 14:09:54]DESC cz_auth_rule
+[2017-12-06 14:09:54]SELECT * from cz_auth_rule 
+[2017-12-06 14:09:58]set names utf8
+[2017-12-06 14:09:58]DESC cz_auth_group
+[2017-12-06 14:09:58]UPDATE `cz_auth_group` SET `rules`='14,15,16,17' WHERE `id`=2
+[2017-12-06 14:10:01]set names utf8
+[2017-12-06 14:10:01]DESC cz_auth_group
+[2017-12-06 14:10:01]select * from `cz_auth_group` where `id`=0
+[2017-12-06 14:10:01]select rules from cz_auth_group WHERE id = 0
+[2017-12-06 14:10:01]set names utf8
+[2017-12-06 14:10:01]DESC cz_auth_rule
+[2017-12-06 14:10:01]SELECT * from cz_auth_rule 
+[2017-12-06 14:11:34]set names utf8
+[2017-12-06 14:11:34]DESC cz_auth_group
+[2017-12-06 14:11:34]select * from `cz_auth_group` where `id`=2
+[2017-12-06 14:11:34]select rules from cz_auth_group WHERE id = 2
+[2017-12-06 14:11:34]set names utf8
+[2017-12-06 14:11:34]DESC cz_auth_rule
+[2017-12-06 14:11:34]SELECT * from cz_auth_rule 
+[2017-12-06 14:11:35]set names utf8
+[2017-12-06 14:11:35]DESC cz_auth_group
+[2017-12-06 14:11:35]select * from cz_auth_group
+[2017-12-06 14:11:36]set names utf8
+[2017-12-06 14:11:36]DESC cz_auth_group
+[2017-12-06 14:11:36]select * from cz_auth_group
+[2017-12-06 14:11:36]set names utf8
+[2017-12-06 14:11:36]DESC cz_auth_group
+[2017-12-06 14:11:36]select * from cz_auth_group
+[2017-12-06 14:11:36]set names utf8
+[2017-12-06 14:11:36]DESC cz_auth_group
+[2017-12-06 14:11:36]select * from cz_auth_group
+[2017-12-06 14:11:37]set names utf8
+[2017-12-06 14:11:37]DESC cz_auth_group
+[2017-12-06 14:11:37]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:11:37]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:11:37]set names utf8
+[2017-12-06 14:11:37]DESC cz_auth_rule
+[2017-12-06 14:11:37]SELECT * from cz_auth_rule 
+[2017-12-06 14:12:04]set names utf8
+[2017-12-06 14:12:04]DESC cz_auth_group
+[2017-12-06 14:12:04]select * from cz_auth_group
+[2017-12-06 14:12:04]set names utf8
+[2017-12-06 14:12:04]DESC cz_auth_group
+[2017-12-06 14:12:04]select * from cz_auth_group
+[2017-12-06 14:12:05]set names utf8
+[2017-12-06 14:12:05]DESC cz_auth_group
+[2017-12-06 14:12:05]select * from cz_auth_group
+[2017-12-06 14:12:05]set names utf8
+[2017-12-06 14:12:05]DESC cz_auth_group
+[2017-12-06 14:12:05]select * from cz_auth_group
+[2017-12-06 14:12:06]set names utf8
+[2017-12-06 14:12:06]DESC cz_auth_group
+[2017-12-06 14:12:06]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:12:06]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:12:06]set names utf8
+[2017-12-06 14:12:06]DESC cz_auth_rule
+[2017-12-06 14:12:06]SELECT * from cz_auth_rule 
+[2017-12-06 14:12:51]set names utf8
+[2017-12-06 14:12:51]DESC cz_auth_group
+[2017-12-06 14:12:51]select * from cz_auth_group
+[2017-12-06 14:12:51]set names utf8
+[2017-12-06 14:12:51]DESC cz_auth_group
+[2017-12-06 14:12:51]select * from cz_auth_group
+[2017-12-06 14:12:51]set names utf8
+[2017-12-06 14:12:51]DESC cz_auth_group
+[2017-12-06 14:12:52]select * from cz_auth_group
+[2017-12-06 14:12:52]set names utf8
+[2017-12-06 14:12:52]DESC cz_auth_group
+[2017-12-06 14:12:52]select * from cz_auth_group
+[2017-12-06 14:12:52]set names utf8
+[2017-12-06 14:12:52]DESC cz_auth_group
+[2017-12-06 14:12:52]select * from cz_auth_group
+[2017-12-06 14:12:52]set names utf8
+[2017-12-06 14:12:52]DESC cz_auth_group
+[2017-12-06 14:12:52]select * from cz_auth_group
+[2017-12-06 14:12:53]set names utf8
+[2017-12-06 14:12:53]DESC cz_auth_group
+[2017-12-06 14:12:53]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:12:53]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:12:53]set names utf8
+[2017-12-06 14:12:53]DESC cz_auth_rule
+[2017-12-06 14:12:53]SELECT * from cz_auth_rule 
+[2017-12-06 14:12:58]set names utf8
+[2017-12-06 14:12:58]DESC cz_auth_group
+[2017-12-06 14:12:58]select * from cz_auth_group
+[2017-12-06 14:12:59]set names utf8
+[2017-12-06 14:12:59]DESC cz_auth_group
+[2017-12-06 14:12:59]select * from `cz_auth_group` where `id`=2
+[2017-12-06 14:12:59]select rules from cz_auth_group WHERE id = 2
+[2017-12-06 14:12:59]set names utf8
+[2017-12-06 14:12:59]DESC cz_auth_rule
+[2017-12-06 14:12:59]SELECT * from cz_auth_rule 
+[2017-12-06 14:13:02]set names utf8
+[2017-12-06 14:13:02]DESC cz_auth_group
+[2017-12-06 14:13:02]select * from cz_auth_group
+[2017-12-06 14:13:03]set names utf8
+[2017-12-06 14:13:03]DESC cz_auth_group
+[2017-12-06 14:13:03]select * from `cz_auth_group` where `id`=3
+[2017-12-06 14:13:03]select rules from cz_auth_group WHERE id = 3
+[2017-12-06 14:13:03]set names utf8
+[2017-12-06 14:13:03]DESC cz_auth_rule
+[2017-12-06 14:13:03]SELECT * from cz_auth_rule 
+[2017-12-06 14:13:05]set names utf8
+[2017-12-06 14:13:05]DESC cz_auth_group
+[2017-12-06 14:13:05]select * from cz_auth_group
+[2017-12-06 14:13:07]set names utf8
+[2017-12-06 14:13:07]DESC cz_auth_group
+[2017-12-06 14:13:07]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:13:07]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:13:07]set names utf8
+[2017-12-06 14:13:07]DESC cz_auth_rule
+[2017-12-06 14:13:07]SELECT * from cz_auth_rule 
+[2017-12-06 14:13:10]set names utf8
+[2017-12-06 14:13:10]DESC cz_auth_group
+[2017-12-06 14:13:10]UPDATE `cz_auth_group` SET `rules`='1,2,4,5,8,9,10,6,7,11,12,13' WHERE `id`=1
+[2017-12-06 14:13:13]set names utf8
+[2017-12-06 14:13:13]DESC cz_auth_group
+[2017-12-06 14:13:13]select * from cz_auth_group
+[2017-12-06 14:13:15]set names utf8
+[2017-12-06 14:13:15]DESC cz_auth_group
+[2017-12-06 14:13:15]select * from `cz_auth_group` where `id`=1
+[2017-12-06 14:13:15]select rules from cz_auth_group WHERE id = 1
+[2017-12-06 14:13:15]set names utf8
+[2017-12-06 14:13:15]DESC cz_auth_rule
+[2017-12-06 14:13:15]SELECT * from cz_auth_rule 
+[2017-12-06 14:13:19]set names utf8
+[2017-12-06 14:13:19]DESC cz_auth_group
+[2017-12-06 14:13:19]select * from cz_auth_group
+[2017-12-06 14:13:21]set names utf8
+[2017-12-06 14:13:21]DESC cz_auth_group
+[2017-12-06 14:13:21]select * from `cz_auth_group` where `id`=2
+[2017-12-06 14:13:21]select rules from cz_auth_group WHERE id = 2
+[2017-12-06 14:13:21]set names utf8
+[2017-12-06 14:13:21]DESC cz_auth_rule
+[2017-12-06 14:13:21]SELECT * from cz_auth_rule 
+[2017-12-06 14:13:23]set names utf8
+[2017-12-06 14:13:23]DESC cz_auth_group
+[2017-12-06 14:13:23]select * from cz_auth_group
+[2017-12-06 14:13:25]set names utf8
+[2017-12-06 14:13:25]DESC cz_auth_group
+[2017-12-06 14:13:25]select * from `cz_auth_group` where `id`=3
+[2017-12-06 14:13:25]select rules from cz_auth_group WHERE id = 3
+[2017-12-06 14:13:25]set names utf8
+[2017-12-06 14:13:25]DESC cz_auth_rule
+[2017-12-06 14:13:25]SELECT * from cz_auth_rule 
+[2017-12-06 14:17:12]set names utf8
+[2017-12-06 14:17:12]DESC cz_auth_group
+[2017-12-06 14:17:12]select * from `cz_auth_group` where `id`=3
+[2017-12-06 14:17:12]select rules from cz_auth_group WHERE id = 3
+[2017-12-06 14:17:12]set names utf8
+[2017-12-06 14:17:12]DESC cz_auth_rule
+[2017-12-06 14:17:12]SELECT * from cz_auth_rule 

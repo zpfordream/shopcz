@@ -27,11 +27,11 @@
 				<td class="label">权限分配:</td>
 				<td>
 					<?php foreach($accesses as $access ): ?>
-						<input type="checkbox" name="acces[]" value="<?php echo $access['id'] ;?>"   ><?php echo $access['title'] ;?> <br/>
+						<input type="checkbox" name="acces[]" value="<?php echo $access['id'] ;?>"  <?php echo in_array($access['id'] ,$rules) ? "checked = 'checked'" : ""  ;?>  ><?php echo $access['title'] ;?> <br/>
 						<?php foreach($access['child'] as $v ): ?>
-					<?php echo "----" ; ?><input type="checkbox" name="acces[]" value="<?php echo $v['id'] ;?>"    ><?php echo $v['title'] ;?><br/>
+					<?php echo "----" ; ?><input type="checkbox" name="acces[]" value="<?php echo $v['id'] ;?>"  <?php echo in_array($v['id'] ,$rules) ? "checked = 'checked'" : ""  ;?>   ><?php echo $v['title'] ;?><br/>
 							<?php foreach($v['child'] as $v1 ): ?>
-					<?php echo "--------" ; ?><input type="checkbox" name="acces[]" value="<?php echo $v1['id'] ;?>"   ><?php echo $v1['title'] ;?><br/>
+					<?php echo "--------" ; ?><input type="checkbox" name="acces[]" value="<?php echo $v1['id'] ;?>" <?php echo in_array($v1['id'] ,$rules) ? "checked = 'checked'" : ""  ;?>  ><?php echo $v1['title'] ;?><br/>
 							<?php endforeach; ?>
 						<?php endforeach; ?>
 
